@@ -23,13 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Anderson Morillo"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Research assistant at VerbaNex AI Lab specializing in NLP with experience in sentiment analysis, text summarization, and machine translation."
+  location         : "Cartagena, Bolívar, Colombia"
+  employer         : "VerbaNex AI Lab"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "amorillo@utb.edu.co" 
 
   # Academic websites
   academia         : # URL
