@@ -11,8 +11,14 @@ locale                   : "en-US"
 site_theme               : "default"
 title                    : "Anderson´s code"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
+name                     : Anderson Morillo
+title: Python Developer and NLP Researcher
+email: amorillo@utb.edu.co
+location: Cartagena de indias, Bolívar, Colombia
+description: Research assistant at VerbaNex AI Lab specializing in NLP with experience in sentiment analysis, text summarization, and machine translation.
+github: andersonmorillo
+linkedin: anderson-morillo-792515153
+description              : Research assistant at VerbaNex AI Lab specializing in NLP with experience in sentiment analysis, text summarization, and machine translation.
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -46,7 +52,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "academicpages"
+  github           : "andersonmorillo"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
@@ -60,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "anderson-morillo-792515153"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
