@@ -1,0 +1,35 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
+
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default"
+title                    : "Python Developer and NLP Researcher"
+name                     : "Anderson Morillo"
+description              : "Research assistant at VerbaNex AI Lab specializing in NLP with experience in sentiment analysis, text summarization, and machine translation."
+email: amorillo@utb.edu.co
+location: Cartagena de indias, Bolívar, Colombia
+github: andersonmorillo
+linkedin: anderson-morillo-792515153
+url                      : https://academicpages.github.io
+baseurl                  : ""
+repository               : "academicpages/academicpages.github.io"
+
+# Site Author
+author:
+  avatar           : "profile.png"
+  name             : "Anderson Morillo"
+  bio              : "Research assistant at VerbaNex AI Lab specializing in NLP with experience in sentiment analysis, text summarization, and machine translation."
+  location         : "Cartagena de indias, Bolívar, Colombia"
+  employer         : "VerbaNex AI Lab"
+  uri              : # URL
+  email            : "amorillo@utb.edu.co"
+  github: andersonmorillo
+  linkedin: anderson-morillo-792515153
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
