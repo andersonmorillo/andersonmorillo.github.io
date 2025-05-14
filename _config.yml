@@ -12,7 +12,12 @@ site_theme               : "default"
 title                    : "Anderson´s code"
 title_separator          : "-"
 name                     : Anderson Morillo
-title                    : Python Developer and NLP Researcher
+title: Python Developer and NLP Researcher
+email: amorillo@utb.edu.co
+location: Cartagena de indias, Bolívar, Colombia
+description: Research assistant at VerbaNex AI Lab specializing in NLP with experience in sentiment analysis, text summarization, and machine translation.
+github: andersonmorillo
+linkedin: anderson-morillo-792515153
 description              : Research assistant at VerbaNex AI Lab specializing in NLP with experience in sentiment analysis, text summarization, and machine translation.
 url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
