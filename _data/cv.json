@@ -1,152 +1,159 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Anderson Morillo",
+    "email": "amorillo@utb.edu.co",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://andersonmorillo.github.io",
+    "summary": "Software Developer with expertise in Full Stack development. Skilled in modern web technologies and passionate about creating efficient, user-friendly applications.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Cartagena",
+      "countryCode": "CO",
+      "region": "Bolívar"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "network": "LinkedIn",
+        "username": "anderson-morillo",
+        "url": "https://www.linkedin.com/in/anderson-morillo-792515153/"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "andersonmorillo",
+        "url": "https://github.com/andersonmorillo"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Freelance Developer",
+      "position": "Full Stack Developer",
+      "website": "",
+      "startDate": "2022",
+      "endDate": "Present",
+      "summary": "Developing web applications and solutions for clients using modern technologies.",
+      "highlights": [
+        "Front-end development with React and JavaScript/TypeScript",
+        "Back-end development with Node.js",
+        "Database management and integration"
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "Universidad Tecnológica de Bolívar",
+      "area": "Computer Science",
+      "studyType": "Bachelor's Degree",
+      "startDate": "2019",
+      "endDate": "2024",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "skills": [
+    {
+      "name": "Front-end Development",
+      "level": "Advanced",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Next.js"
+      ]
+    },
+    {
+      "name": "Back-end Development",
+      "level": "Intermediate",
+      "keywords": [
+        "Node.js",
+        "Express",
+        "RESTful APIs"
+      ]
+    },
+    {
+      "name": "Tools & Technologies",
+      "level": "Intermediate",
+      "keywords": [
+        "Git",
+        "GitHub",
+        "VS Code",
+        "npm"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "Intermediate",
+      "keywords": [
+        "MySQL",
+        "MongoDB"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Web Development",
+      "keywords": [
+        "Modern frameworks",
+        "UI/UX design",
+        "Web accessibility"
+      ]
+    },
+    {
+      "name": "Programming",
+      "keywords": [
+        "Open source",
+        "Problem solving",
+        "Algorithm optimization"
+      ]
+    }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "Personal Portfolio Projects",
+      "publisher": "GitHub",
+      "releaseDate": "2023",
+      "website": "https://github.com/andersonmorillo",
+      "summary": "Collection of personal projects showcasing skills in web development and programming."
     }
   ],
   "presentations": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "Modern Web Development Techniques",
+      "event": "Local Developer Meetup",
+      "date": "2023-05-15",
+      "location": "Santo Domingo, Dominican Republic",
+      "description": "Presentation on modern web development frameworks and best practices."
     }
   ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
+  "teaching": [],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "Personal Portfolio Website",
+      "category": "Web Development",
+      "date": "2023",
+      "url": "https://andersonmorillo.github.io",
+      "description": "Personal portfolio website built with modern web technologies to showcase skills and projects.<br/><img src='/images/portfolio-screenshot.png'>"
+    },
+    {
+      "name": "E-commerce Platform",
+      "category": "Full Stack Development",
+      "date": "2022",
+      "url": "https://github.com/andersonmorillo",
+      "description": "A comprehensive e-commerce solution featuring product listings, user authentication, and payment processing.<br/><img src='/images/ecommerce-project.png'>"
     }
   ]
 }

@@ -11,54 +11,49 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Bachelor's Degree in Computer Science, Universidad Tecnológica de Bolívar, 2024
+* Master's Student in Computer Science, Universidad Tecnológica de Bolívar, 2025 (expected)
 
-Work experience
+Work Experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* July 2024 – Present: Software Engineer
+  * Del Laboratorio al Campo
+  * Responsibilities: Developing and maintaining software solutions.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* July 2022 – Present: Research Assistant
+  * Universidad Tecnológica de Bolívar
+  * Responsibilities: Conducted research in Natural Language Processing and contributed to academic publications.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
+* Sep 2023 – Mar 2024: IT Infrastructure Intern
+  * ESENTTIA
+  * Responsibilities: Assisted in managing and improving the university's IT infrastructure.
+
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages: Python
+* Web Development: Django and Next.js
+* Databases: MySQL, MongoDB
+* Tools & Technologies: Git, GitHub, Cursor
+* Areas of Expertise: Natural Language Processing, Software Architecture, Applied Artificial Intelligence
 
 Publications
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+<!-- Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+<ul>{% for post in site.talks reversed %}
+  {% include archive-single-talk-cv.html  %}
+{% endfor %}</ul> -->
+
+<!-- Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul> -->
+
+Service and Leadership
 ======
-* Currently signed in to 43 different slack teams
+* Active member of multiple developer communities.
