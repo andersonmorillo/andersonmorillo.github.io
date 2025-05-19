@@ -1,17 +1,18 @@
 ---
+
 # Display name
-title: 吳健雄
+title: Anderson Morillo
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Anderson Morillo
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Anderson
+last_name: Morillo
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 💻
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,31 +21,118 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Software Engineer & Research Assistant
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Universidad Tecnológica de Bolívar
+    url: https://www.utb.edu.co/
+  - name: Del Laboratorio al Campo
+    url: https://dellaboratorioalcampo.com/
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:andersonmorillo@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/andersonmorillo
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/in/andersonmorillo/
+
+interests:
+  - Natural Language Processing
+  - Software Architecture
+  - Applied Artificial Intelligence
+
+education:
+  - area: Bachelor's Degree in Computer Science
+    institution: Universidad Tecnológica de Bolívar
+    date_start: 2020-01-01
+    date_end: 2024-12-31
+    summary: |
+      Graduated in 2024.
+  - area: Master's Student in Computer Science
+    institution: Universidad Tecnológica de Bolívar
+    date_start: 2024-01-01
+    date_end: 2025-12-31
+    summary: |
+      Expected graduation 2025.
+
+work:
+  - position: Software Engineer
+    company_name: Del Laboratorio al Campo
+    date_start: 2024-07-01
+    date_end: ''
+    summary: |
+      Responsibilities: Developing and maintaining software solutions.
+  - position: Research Assistant
+    company_name: Universidad Tecnológica de Bolívar
+    date_start: 2022-07-01
+    date_end: ''
+    summary: |
+      Responsibilities: Conducted research in Natural Language Processing and contributed to academic publications.
+  - position: IT Infrastructure Intern
+    company_name: ESENTTIA
+    date_start: 2023-09-01
+    date_end: 2024-03-31
+    summary: |
+      Responsibilities: Assisted in managing and improving the university's IT infrastructure.
+
+# Skills
+skills:
+  - name: Programming Languages
+    items:
+      - name: Python
+        percent: 90
+        icon: code-bracket
+  - name: Web Development
+    items:
+      - name: Django
+        percent: 80
+        icon: code-bracket
+      - name: Next.js
+        percent: 80
+        icon: code-bracket
+  - name: Databases
+    items:
+      - name: MySQL
+        percent: 70
+        icon: database
+      - name: MongoDB
+        percent: 70
+        icon: database
+  - name: Tools & Technologies
+    items:
+      - name: Git
+        percent: 90
+        icon: git
+      - name: GitHub
+        percent: 90
+        icon: brands/github
+      - name: Cursor
+        percent: 80
+        icon: code-bracket
+  - name: Areas of Expertise
+    items:
+      - name: Natural Language Processing
+        percent: 90
+        icon: code-bracket
+      - name: Software Architecture
+        percent: 80
+        icon: code-bracket
+      - name: Applied Artificial Intelligence
+        percent: 80
+        icon: code-bracket
+
+languages:
+  - name: Spanish
+    percent: 100
+  - name: English
+    percent: 80
+
+# Awards (add if available)
+awards: []
 
 interests:
   - Artificial Intelligence
@@ -183,4 +271,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Software Engineer and Research Assistant passionate about Natural Language Processing, software architecture, and applied AI. Experienced in Python, Django, Next.js, and cloud technologies. Always eager to learn and contribute to impactful projects.
