@@ -1,53 +1,82 @@
+# Anderson Morillo's Personal Website
 
-# [documentaion](https://docs.hugoblox.com/tutorial/resume/)
+This is my personal academic website built with Hugo Blox Builder, showcasing my professional experience, publications, projects, and teaching activities.
 
+## 🚀 Features
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+- 📝 Academic CV and professional experience
+- 📚 Publications and research work
+- 🎓 Teaching activities and courses
+- 💼 Projects and achievements
+- 📰 News and updates
+- 🌐 Multilingual support
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+## 🛠️ Built With
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+- [Hugo Blox Builder](https://hugoblox.com/) - The website builder
+- [Hugo](https://gohugo.io/) - The static site generator
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Netlify](https://www.netlify.com/) - For hosting and deployment
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+## 📦 Project Structure
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+```
+andersonmorillo.github.io/
+├── assets/          # Static assets
+├── config/          # Hugo configuration
+├── content/         # Website content
+│   ├── authors/     # Author information
+│   ├── event/       # Events and talks
+│   ├── post/        # Blog posts
+│   ├── project/     # Project details
+│   ├── publication/ # Publications
+│   └── teaching/    # Teaching materials
+├── layouts/         # Custom layouts
+├── static/          # Static files
+└── resources/       # Generated resources
+```
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+## 🚀 Getting Started
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/andersonmorillo/andersonmorillo.github.io.git
+   ```
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+2. Install Hugo Extended:
+   - Download from [Hugo Releases](https://github.com/gohugoio/hugo/releases)
+   - Make sure to get the Extended version
 
-## We ask you, humbly, to support this open source movement
+3. Run locally:
+   ```bash
+   hugo server -D
+   ```
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+4. Visit `http://localhost:1313` in your browser
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+## 📝 Content Management
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+- Edit content in the `content/` directory
+- Add new publications in `content/publication/`
+- Create new projects in `content/project/`
+- Write blog posts in `content/post/`
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+## 🔧 Configuration
 
-## Demo image credits
+- Main configuration: `config/_default/`
+- Site parameters: `config/_default/params.yaml`
+- Menu configuration: `config/_default/menus.yaml`
 
-- [Unsplash](https://unsplash.com)
+## 📄 License
 
-## Latest news
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
-<!--START_SECTION:news-->
-* [6 Compelling Reasons I Switched from WordPress to Hugo](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;wordpress&#x2F;)
-* [The 7 best landing page builders in 2024](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;7-best-landing-page-builders&#x2F;)
-* [Start a Blog and Make Money in 2024: Here&#39;s What You Need to Know](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;start-a-blog-and-make-money&#x2F;)
-* [Hugo vs Quarto: Which One is Better for 2024?](https:&#x2F;&#x2F;hugoblox.com&#x2F;vs&#x2F;quarto&#x2F;)
-* [Easily make an academic CV website to get more cites and grow your audience 🚀](https:&#x2F;&#x2F;hugoblox.com&#x2F;blog&#x2F;easily-make-academic-website&#x2F;)
-<!--END_SECTION:news-->
+## 🙏 Acknowledgments
+
+- [Hugo Blox Builder](https://hugoblox.com/) for the amazing template
+- [Hugo](https://gohugo.io/) for the static site generator
+- [Netlify](https://www.netlify.com/) for hosting
+
+---
+
+Made with ❤️ by Anderson Morillo

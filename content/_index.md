@@ -30,18 +30,18 @@ sections:
           size: cover
           position: center
           parallax: false
-  # - block: markdown
-  #   content:
-  #     title: '📚 My Research'
-  #     subtitle: ''
-  #     text: |-
-  #       Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+  - block: markdown
+    content:
+      title: '📚 My Research'
+      subtitle: ''
+      text: |-
+        I'm a research and I can create alot of thinks with the power of CHATGPT and LOVE.
 
-  #       I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        In this space is to know about some important news of AI and also cool projetcs that I create.
         
-  #       Please reach out to collaborate 😃
-  #   design:
-  #     columns: '1'
+        Please reach out to collaborate 😃 ---> andersonmorillodiaz31@gmail.com
+    design:
+      columns: '1'
   # - block: collection
   #   id: papers
   #   content:
@@ -53,16 +53,16 @@ sections:
   #   design:
   #     view: article-grid
   #     columns: 2
-  # - block: collection
-  #   content:
-  #     title: Recent Publications
-  #     text: ""
-  #     filters:
-  #       folders:
-  #         - publication
-  #       exclude_featured: false
-  #   design:
-  #     view: citation
+  - block: collection
+    content:
+      title: Recent Publications
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
+    design:
+      view: citation
   # - block: collection
     # id: talks
     # content:
@@ -76,9 +76,9 @@ sections:
   - block: collection
     id: news
     content:
-      title: Recent News
-      subtitle: ''
-      text: ''
+      title: Recent posts
+      subtitle: 'Posts recientes'
+      text: 'Most of the posts are in spanish because is my main language'
       # Page type to display. E.g. post, talk, publication...
       page_type: post
       # Choose how many pages you would like to display (0 = all pages)

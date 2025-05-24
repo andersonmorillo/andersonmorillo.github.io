@@ -4,7 +4,7 @@
 title: Anderson Morillo
 
 # Name pronunciation (optional)
-name_pronunciation: Anderson Morillo
+name_pronunciation: 
 
 # Full name (for SEO)
 first_name: Anderson
@@ -27,8 +27,8 @@ role: Software Engineer & Research Assistant
 organizations:
   - name: Universidad Tecnológica de Bolívar
     url: https://www.utb.edu.co/
-  - name: Del Laboratorio al Campo
-    url: https://dellaboratorioalcampo.com/
+  # - name: Del Laboratorio al Campo
+  #   url: https://dellaboratorioalcampo.com/
 
 # Social network links
 profiles:
