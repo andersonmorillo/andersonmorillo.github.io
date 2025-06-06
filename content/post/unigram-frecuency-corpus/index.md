@@ -1,7 +1,7 @@
 ---
 title: 📊 Crea tu propio corpus de frecuencia de unigrama usando datos de Google
 summary: Aprende a procesar un gran corpus de unigramas en inglés y obtener frecuencias relativas usando Python.
-date: 2024-06-10
+date: 2025-06-06
 authors:
   - admin
 tags:
