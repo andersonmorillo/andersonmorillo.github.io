@@ -86,7 +86,7 @@ math: true  # Enable LaTeX math (optional)
 - **Shortcodes**: Add dynamic content
   - YouTube: `{{< youtube VIDEO_ID >}}`
   - Audio: `{{< audio src="ambient-piano.mp3" >}}`
-  - Video: `{{< video src="my_video.mp4" controls="yes" >}}`
+  - Video: `{{</* video src="my_video.mp4" controls="yes" */>}}`
   - Table: `{{< table path="results.csv" header="true" caption="Table 1: My results" >}}`
   - Chart: `{{< chart data="line-chart" >}}`
   - Mermaid diagrams: Use fenced code blocks with `mermaid`
