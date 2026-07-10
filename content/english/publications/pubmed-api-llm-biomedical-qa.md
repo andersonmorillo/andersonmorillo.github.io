@@ -10,7 +10,9 @@ draft: false
 
 **Authors:** Anderson Morillo, Carlos Agamez, Edwin Puertas, Juan Carlos Martinez-Santos, Jairo Serrano
 
-**Venue:** Proceedings of IEEE Conference
+**Venue:** 2025 IEEE Colombian Caribbean Conference (C3)
+
+**DOI:** [10.1109/C366505.2025.11340582](https://doi.org/10.1109/c366505.2025.11340582)
 
 **Links:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11340582)
 

@@ -10,7 +10,9 @@ draft: false
 
 **Authors:** Anderson Morillo, Edwin Puertas, Juan Carlos Martinez Santos
 
-**Venue:** Proceedings of the 19th International Workshop on Semantic Evaluation (SemEval-2025)
+**Venue:** Proceedings of the 19th International Workshop on Semantic Evaluation (SemEval-2025), Vienna, Austria. Association for Computational Linguistics. Pages 1534–1541.
+
+**Anthology ID:** [2025.semeval-1.202](https://aclanthology.org/2025.semeval-1.202/) (no separate DOI assigned in the ACL Anthology record)
 
 **Links:** [PDF](https://aclanthology.org/2025.semeval-1.202.pdf) · [ACL Anthology](https://aclanthology.org/2025.semeval-1.202/)
 

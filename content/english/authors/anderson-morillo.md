@@ -1,8 +1,8 @@
 ---
 title: Anderson Morillo
-email: andersonmorillo@gmail.com
+email: amorillo@utb.edu.co
 image: "/images/avatar.png"
-description: Software Engineer and Research Assistant focused on NLP, software architecture, and applied AI.
+description: AI Engineer and NLP Researcher building RAG systems, fine-tuned transformers, and production AI platforms.
 social:
   - name: github
     icon: fa-brands fa-github
@@ -10,13 +10,13 @@ social:
 
   - name: linkedin
     icon: fa-brands fa-linkedin
-    link: https://www.linkedin.com/in/andersonmorillo/
+    link: https://www.linkedin.com/in/anderson-morillo-792515153/
 
   - name: email
     icon: fa-solid fa-envelope
-    link: mailto:andersonmorillo@gmail.com
+    link: mailto:amorillo@utb.edu.co
 ---
 
-Software Engineer and Research Assistant passionate about Natural Language Processing, software architecture, and applied AI. Experienced in Python, Django, Next.js, and cloud technologies. Always eager to learn and contribute to impactful projects.
+AI Engineer and NLP Researcher based in Cartagena, Colombia. I build NLP and AI systems end to end — from RAG-based chatbots and fine-tuned transformers to real-time data platforms — with Docker, FastAPI, and cloud deployment.
 
-**Affiliation:** [Universidad Tecnológica de Bolívar](https://www.utb.edu.co/)
+**Affiliation:** [Universidad Tecnológica de Bolívar](https://www.utb.edu.co/) · COTECMAR

@@ -2,6 +2,7 @@
 title: "Privacy"
 meta_title: "Privacy Policy"
 description: "Privacy policy for andersonmorillo.github.io"
+slug: "privacy"
 draft: false
 ---
 

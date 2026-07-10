@@ -6,7 +6,7 @@ image: "/images/image-placeholder.png"
 categories: ["Guides"]
 author: "Anderson Morillo"
 tags: ["Hugo", "Markdown", "Guide"]
-draft: false
+draft: true
 ---
 
 # Guide to Configuring and Creating Markdown Posts

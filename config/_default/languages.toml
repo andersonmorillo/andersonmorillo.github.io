@@ -4,3 +4,10 @@ label = "En"
 locale = "en-us"
 contentDir = "content/english"
 weight = 1
+
+################ Spanish language ##################
+[es]
+label = "Es"
+locale = "es-co"
+contentDir = "content/spanish"
+weight = 2
