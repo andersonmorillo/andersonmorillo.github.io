@@ -1,0 +1,29 @@
+
+> hugoplate@3.5.1 dev
+> concurrently "node scripts/themeGenerator.js --watch" "hugo server"
+
+[0] ✅ Theme CSS generated successfully at: C:\Users\nosre\DESARROLLO\hugoplate-main\hugoplate-main\themes\hugoplate\assets\css\generated-theme.css
+[0] 👁️  Watching for changes to: C:\Users\nosre\DESARROLLO\hugoplate-main\hugoplate-main\data\theme.json
+[1] Watching for changes in C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/assets/{css,images}, C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/content/english/{about,authors,blog,contact,pages,...}, C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/data, C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/i18n, C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/package.json, C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/static/.well-known, C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/themes/hugoplate/assets/{css,js,plugins}, C:/Users/nosre/DESARROLLO/hugoplate-main/hugoplate-main/themes/hugoplate/layouts/{_partials,authors,blog}
+[1] Watching for config changes in C:\Users\nosre\DESARROLLO\hugoplate-main\hugoplate-main\hugo.toml, C:\Users\nosre\DESARROLLO\hugoplate-main\hugoplate-main\config\_default, C:\Users\nosre\DESARROLLO\hugoplate-main\hugoplate-main\config\development, C:\Users\nosre\DESARROLLO\hugoplate-main\hugoplate-main\go.mod
+[1] Start building sites ... 
+[1] hugo v0.158.0-f41be7959a44108641f1e081adf5c4be7fc1bb63+extended windows/amd64 BuildDate=2026-03-16T17:42:04Z VendorInfo=gohugoio
+[1] 
+[1] 
+[1]                   │ EN 
+[1] ──────────────────┼────
+[1]  Pages            │ 90 
+[1]  Paginator pages  │  0 
+[1]  Non-page files   │  0 
+[1]  Static files     │  4 
+[1]  Processed images │ 79 
+[1]  Aliases          │  1 
+[1]  Cleaned          │  0 
+[1] 
+[1] Built in 719 ms
+[1] Environment: "development"
+[1] Serving pages from disk
+[1] Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+[1] Web Server is available at //localhost:1313/ (bind address 127.0.0.1) 
+[1] Press Ctrl+C to stop
+[1] hugo server exited with code 1
