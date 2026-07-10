@@ -1,20 +1,48 @@
 ---
-title: "Hey, I am John Doe!"
+title: "About Anderson Morillo"
 meta_title: "About"
-description: "this is meta description"
-image: "/images/image-placeholder.png"
+description: "Software Engineer and Research Assistant at Universidad Tecnológica de Bolívar, focused on NLP and applied AI."
+image: "/images/avatar.png"
 layout: "about"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Software Engineer and Research Assistant passionate about Natural Language Processing, software architecture, and applied AI. Experienced in Python, Django, Next.js, and cloud technologies. Always eager to learn and contribute to impactful projects.
 
-### This is a title
+**Role:** Software Engineer & Research Assistant  
+**Affiliation:** [Universidad Tecnológica de Bolívar](https://www.utb.edu.co/)
 
-* Lorem ipsum, dolor sit amet
-* Enim voluptatem dicta expedita veritatis
-* Fugit voluptatibus perspiciatis assumenda
-* Enim voluptatem dicta expedita
-* Corporis illum nesciunt commodi vel
+[Download CV](/uploads/resume.pdf) · [Email](mailto:andersonmorillo@gmail.com) · [GitHub](https://github.com/andersonmorillo) · [LinkedIn](https://www.linkedin.com/in/andersonmorillo/)
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+### Interests
+
+* Natural Language Processing
+* Software Architecture
+* Applied Artificial Intelligence
+
+### Education
+
+* **Master's Student in Computer Science** — Universidad Tecnológica de Bolívar (2024–2025)
+* **Bachelor's Degree in Computer Science** — Universidad Tecnológica de Bolívar (2020–2024)
+
+### Experience
+
+* **Software Engineer** — Del Laboratorio al Campo (2024–present)  
+  Developing and maintaining software solutions.
+* **Research Assistant** — Universidad Tecnológica de Bolívar (2022–present)  
+  Research in Natural Language Processing and academic publications.
+* **IT Infrastructure Intern** — ESENTTIA (2023–2024)  
+  Assisted in managing and improving IT infrastructure.
+
+### Skills
+
+* **Programming:** Python
+* **Web:** Django, Next.js
+* **Databases:** MySQL, MongoDB
+* **Tools:** Git, GitHub, Cursor
+* **Focus areas:** NLP, software architecture, applied AI
+
+### Languages
+
+* Spanish (native)
+* English (professional working proficiency)
