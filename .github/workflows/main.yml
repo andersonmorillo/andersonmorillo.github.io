@@ -21,7 +21,6 @@ defaults:
 
 env:
   HUGO_ENV: production
-  HUGO_VERSION: "0.158.0"
   GO_VERSION: "1.23.3"
 
 jobs:
@@ -38,11 +37,11 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup mise
+        uses: jdx/mise-action@v2
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
+          install: true
+          cache: true
 
       - name: Setup Go
         uses: actions/setup-go@v5
