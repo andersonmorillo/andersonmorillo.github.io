@@ -18,4 +18,4 @@ Posts and publication pages may link to third-party sites (for example GitHub, A
 
 ### Contact
 
-For privacy questions, email [andersonmorillo@gmail.com](mailto:andersonmorillo@gmail.com).
+For privacy questions, email [amorillo@utb.edu.co](mailto:amorillo@utb.edu.co).

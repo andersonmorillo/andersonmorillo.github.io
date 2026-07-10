@@ -39,8 +39,8 @@ features:
     image: "/images/service-3.png"
     content: "Abierto a colaborar en NLP, IA aplicada y proyectos de software."
     bulletpoints:
-      - "Correo: andersonmorillo@gmail.com"
-      - "También: badboysa68@gmail.com"
+      - "Correo: amorillo@utb.edu.co"
+      - "También: andersonmorillodiaz31@gmail.com"
       - "GitHub y LinkedIn en el pie de página"
     button:
       enable: true

@@ -8,8 +8,8 @@ draft: false
 
 Open to collaboration on Natural Language Processing, applied AI, and software engineering projects.
 
-- **Email:** [andersonmorillo@gmail.com](mailto:andersonmorillo@gmail.com)
-- **Alternate:** [badboysa68@gmail.com](mailto:badboysa68@gmail.com)
+- **Email:** [amorillo@utb.edu.co](mailto:amorillo@utb.edu.co)
+- **Alternate:** [andersonmorillodiaz31@gmail.com](mailto:andersonmorillodiaz31@gmail.com)
 - **GitHub:** [github.com/andersonmorillo](https://github.com/andersonmorillo)
 - **LinkedIn:** [linkedin.com/in/andersonmorillo](https://www.linkedin.com/in/andersonmorillo/)
 - **Affiliation:** [Universidad Tecnológica de Bolívar](https://www.utb.edu.co/)

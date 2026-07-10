@@ -8,8 +8,8 @@ draft: false
 
 Abierto a colaborar en Procesamiento de Lenguaje Natural, IA aplicada e ingeniería de software.
 
-- **Correo:** [andersonmorillo@gmail.com](mailto:andersonmorillo@gmail.com)
-- **Alternativo:** [badboysa68@gmail.com](mailto:badboysa68@gmail.com)
+- **Correo:** [amorillo@utb.edu.co](mailto:amorillo@utb.edu.co)
+- **Alternativo:** [andersonmorillodiaz31@gmail.com](mailto:andersonmorillodiaz31@gmail.com)
 - **GitHub:** [github.com/andersonmorillo](https://github.com/andersonmorillo)
 - **LinkedIn:** [linkedin.com/in/andersonmorillo](https://www.linkedin.com/in/andersonmorillo/)
 - **Afiliación:** [Universidad Tecnológica de Bolívar](https://www.utb.edu.co/)
