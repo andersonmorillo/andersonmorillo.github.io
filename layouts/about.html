@@ -1,0 +1,150 @@
+{{ define "main" }}
+  {{ $labels := .Params.labels | default dict }}
+  <section class="section-sm about-page">
+    <div class="container">
+      {{/* Profile hero */}}
+      <div class="about-hero row items-center gy-6 mb-14">
+        <div class="md:col-4 lg:col-3 text-center md:text-left">
+          {{ with .Params.image }}
+            {{ partial "image" (dict
+              "Src" .
+              "Context" $.Page
+              "Alt" $.Title
+              "Size" "200x200"
+              "Class" "about-avatar mx-auto md:mx-0 rounded-full shadow-sm"
+            ) }}
+          {{ end }}
+        </div>
+        <div class="md:col-8 lg:col-9">
+          <p class="about-kicker mb-2 text-sm font-semibold tracking-wide text-primary uppercase">
+            {{ .Params.role | default "" }}
+          </p>
+          <h1 class="h2 mb-3">{{ .Title }}</h1>
+          {{ with .Params.location }}
+            <p class="mb-4 text-text-light dark:text-darkmode-text-light">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.summary }}
+            <p class="mb-6 text-lg leading-relaxed">{{ . | markdownify }}</p>
+          {{ end }}
+          {{ with .Params.affiliations }}
+            <p class="mb-6 text-sm">
+              {{ range $i, $a := . }}
+                {{ if $i }} · {{ end }}
+                {{ if $a.link }}
+                  <a href="{{ $a.link }}" target="_blank" rel="noopener">{{ $a.name }}</a>
+                {{ else }}
+                  {{ $a.name }}
+                {{ end }}
+              {{ end }}
+            </p>
+          {{ end }}
+          {{ with .Params.links }}
+            <div class="flex flex-wrap gap-3">
+              {{ range . }}
+                {{ $external := or (strings.HasPrefix .url "http") (strings.HasPrefix .url "mailto:") }}
+                <a
+                  class="btn {{ if .primary }}btn-primary{{ else }}btn-outline-primary{{ end }} btn-sm"
+                  href="{{ if $external }}{{ .url }}{{ else }}{{ .url | relURL }}{{ end }}"
+                  {{ if strings.HasPrefix .url "http" }}target="_blank" rel="noopener"{{ end }}>
+                  {{ .label }}
+                </a>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+      {{ with .Params.interests }}
+        <div class="about-block mb-12">
+          <h2 class="h4 mb-4">{{ $labels.interests | default "Interests" }}</h2>
+          <ul class="about-chips flex flex-wrap gap-2 list-none p-0 m-0">
+            {{ range . }}
+              <li class="about-chip rounded-md bg-light px-3 py-2 text-sm dark:bg-darkmode-light">{{ . }}</li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
+      {{ with .Params.experience }}
+        <div class="about-block mb-12">
+          <h2 class="h4 mb-6">{{ $labels.experience | default "Experience" }}</h2>
+          <ol class="about-timeline m-0 list-none space-y-0 p-0">
+            {{ range . }}
+              <li class="about-timeline-item relative border-l border-border pl-6 pb-8 last:pb-0 dark:border-darkmode-border">
+                <span class="about-timeline-dot absolute top-1.5 -left-[5px] h-2.5 w-2.5 rounded-full bg-primary"></span>
+                <div class="mb-1 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <h3 class="h6 mb-0">{{ .title }}</h3>
+                  <span class="text-sm text-text-light dark:text-darkmode-text-light">{{ .period }}</span>
+                </div>
+                <p class="mb-2 font-semibold text-primary">{{ .org }}</p>
+                {{ with .description }}
+                  <p class="mb-0 text-text-dark dark:text-darkmode-text-dark">{{ . | markdownify }}</p>
+                {{ end }}
+              </li>
+            {{ end }}
+          </ol>
+        </div>
+      {{ end }}
+
+      {{ with .Params.education }}
+        <div class="about-block mb-12">
+          <h2 class="h4 mb-4">{{ $labels.education | default "Education" }}</h2>
+          <ul class="m-0 grid list-none gap-4 p-0 md:grid-cols-2">
+            {{ range . }}
+              <li class="rounded-lg border border-border p-5 dark:border-darkmode-border">
+                <p class="mb-1 font-semibold">{{ .degree }}</p>
+                <p class="mb-1 text-sm">{{ .school }}</p>
+                <p class="mb-0 text-sm text-text-light dark:text-darkmode-text-light">{{ .period }}</p>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
+      {{ with .Params.skills }}
+        <div class="about-block mb-12">
+          <h2 class="h4 mb-4">{{ $labels.skills | default "Skills" }}</h2>
+          <div class="grid gap-6 md:grid-cols-2">
+            {{ range . }}
+              <div>
+                <p class="mb-2 text-sm font-semibold tracking-wide uppercase text-primary">{{ .group }}</p>
+                <ul class="about-chips flex flex-wrap gap-2 list-none p-0 m-0">
+                  {{ range .items }}
+                    <li class="about-chip rounded-md border border-border px-3 py-1.5 text-sm dark:border-darkmode-border">{{ . }}</li>
+                  {{ end }}
+                </ul>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      <div class="row gy-8">
+        {{ with .Params.certifications }}
+          <div class="md:col-6">
+            <h2 class="h4 mb-4">{{ $labels.certifications | default "Certifications" }}</h2>
+            <ul class="m-0 space-y-2 p-0 list-disc pl-5">
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+        {{ with .Params.languages }}
+          <div class="md:col-6">
+            <h2 class="h4 mb-4">{{ $labels.languages | default "Languages" }}</h2>
+            <ul class="m-0 space-y-2 p-0 list-disc pl-5">
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </div>
+        {{ end }}
+      </div>
+
+      {{ with .Content }}
+        <div class="content mt-12">{{ . }}</div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

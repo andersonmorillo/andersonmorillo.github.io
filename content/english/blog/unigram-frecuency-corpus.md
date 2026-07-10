@@ -1,6 +1,6 @@
 ---
-title: "📊 Crea tu propio corpus de frecuencia de unigrama usando datos de Google"
-description: "Aprende a procesar un gran corpus de unigramas en inglés y obtener frecuencias relativas usando Python."
+title: "📊 Build your own unigram frequency corpus with Google data"
+description: "Learn how to process a large English unigram corpus and compute relative frequencies with Python."
 date: 2025-06-06T00:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["NLP"]
@@ -9,48 +9,48 @@ tags: ["Python", "NLP", "Corpus", "Google Ngram"]
 draft: false
 ---
 
-¿Te interesan los corpus lingüísticos y el procesamiento de lenguaje natural? Este post describe cómo crear tu propio corpus de frecuencia de palabras (unigrama) en inglés utilizando el proyecto [Create_google_unigram_frecuency_corpus](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus).
+Interested in linguistic corpora and natural language processing? This post describes how to build your own English word-frequency (unigram) corpus using the [Create_google_unigram_frecuency_corpus](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus) project.
 
-## ¿Qué es un corpus de unigrama?
-Un corpus de unigramas es simplemente una colección de palabras individuales (sin contexto adyacente) y su frecuencia en un gran conjunto de textos. Es vital para tareas como modelado de lenguaje, análisis estadístico y filtrado de palabras en NLP.
+## What is a unigram corpus?
+A unigram corpus is a collection of individual words (without adjacent context) and their frequencies in a large text collection. It is useful for language modeling, statistical analysis, and word filtering in NLP.
 
-## El proyecto
-El repositorio [Create_google_unigram_frecuency_corpus](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus) facilita la descarga, procesamiento y extracción de frecuencias absolutas y relativas de palabras individuales desde el corpus de Google Books, todo de forma automática y optimizada para grandes volúmenes.
+## The project
+The [Create_google_unigram_frecuency_corpus](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus) repository helps you download, process, and extract absolute and relative frequencies of individual words from the Google Books corpus, automatically and optimized for large volumes.
 
-### Características principales
-- Descarga y procesa el dataset de Google Ngram para unigramas en inglés.
-- Procesamiento paralelo para aprovechar todos los núcleos de tu CPU.
-- Calcula frecuencias relativas para cada palabra, exportando los resultados a un archivo CSV.
-- Barras de progreso amigables y eficiente manejo de grandes cantidades de datos.
+### Main features
+- Downloads and processes the Google Ngram dataset for English unigrams.
+- Parallel processing to use all CPU cores.
+- Computes relative frequencies for each word and exports results to a CSV file.
+- Friendly progress bars and efficient handling of large datasets.
 
-## Instalación y uso
-1. Clona el repositorio:
+## Installation and usage
+1. Clone the repository:
    ```bash
    git clone https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus
    cd Create_google_unigram_frecuency_corpus
    ```
-2. Instala las dependencias:
+2. Install dependencies:
    ```bash
    pip install google-ngram-downloader tqdm
    ```
-3. Ejecuta el script principal:
+3. Run the main script:
    ```bash
    python google_unigrams.py
    ```
 
-El script procesa todas las letras de forma paralela, calcula las frecuencias y guarda el resultado en un archivo CSV delimitado por punto y coma (`;`).
+The script processes all letters in parallel, computes frequencies, and saves the result to a semicolon-delimited (`;`) CSV file.
 
-## Salida esperada
-El archivo resultante (`ENG1_GoogleUnigrams.csv`) contiene dos columnas:
-- **Word**: palabra (en minúsculas)
-- **Frequency**: frecuencia relativa calculada
+## Expected output
+The resulting file (`ENG1_GoogleUnigrams.csv`) has two columns:
+- **Word**: word (lowercase)
+- **Frequency**: computed relative frequency
 
-## Aplicaciones
-- Modelado básico del lenguaje y generación de texto
-- Filtrado de palabras según frecuencia para tareas de análisis
-- Construcción de listas de palabras clave
+## Applications
+- Basic language modeling and text generation
+- Frequency-based word filtering for analysis tasks
+- Building keyword lists
 
-## Fuentes y recursos
-- [Repositorio en GitHub](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus)
+## Sources and resources
+- [GitHub repository](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus)
 
-¿Te resulta útil este recurso? ¡Explóralo, experimenta y contribuye!
+If you find this useful, explore it, experiment, and contribute.

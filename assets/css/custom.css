@@ -1,1 +1,62 @@
-/* Add your own custom styles here */
+/* About page */
+.about-page .about-avatar {
+  max-width: 11rem;
+  width: 11rem;
+  height: 11rem;
+  object-fit: cover;
+}
+
+.about-hero,
+.about-block {
+  animation: about-fade-up 0.55s ease both;
+}
+
+.about-block:nth-of-type(2) {
+  animation-delay: 0.08s;
+}
+.about-block:nth-of-type(3) {
+  animation-delay: 0.14s;
+}
+.about-block:nth-of-type(4) {
+  animation-delay: 0.2s;
+}
+
+.about-timeline-item {
+  transition: transform 0.2s ease;
+}
+
+.about-timeline-item:hover {
+  transform: translateX(0.25rem);
+}
+
+.about-chip {
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.about-chip:hover {
+  transform: translateY(-1px);
+}
+
+@keyframes about-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-hero,
+  .about-block,
+  .about-timeline-item,
+  .about-chip {
+    animation: none;
+    transition: none;
+  }
+}

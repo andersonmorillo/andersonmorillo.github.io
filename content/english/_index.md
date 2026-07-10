@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Anderson Morillo"
-  content: "Software Engineer and Research Assistant working on Natural Language Processing, software architecture, and applied AI. Notes on AI research, SemEval papers, and practical NLP projects."
+  content: "AI Engineer and NLP Researcher building RAG systems, fine-tuned transformers, and production AI platforms. Notes on AI research, SemEval papers, and practical NLP projects."
   image: "/images/banner.png"
   button:
     enable: true

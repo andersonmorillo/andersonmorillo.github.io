@@ -1,0 +1,30 @@
+<!-- Language toggle: En | Es -->
+{{ if hugo.IsMultilingual }}
+{{ $class := .Class }}
+{{ $context := .Context }}
+{{ $pageLang := $context.Lang }}
+{{ $pageTranslations := newScratch }}
+{{ range site.Home.AllTranslations }}
+  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+{{ end }}
+{{ range $context.AllTranslations }}
+  {{ $pageTranslations.Set .Language.Lang .Permalink }}
+{{ end }}
+
+<nav class="language-switcher {{ $class }} inline-flex items-center gap-1 text-sm font-medium" aria-label="Language">
+  {{ range site.Languages }}
+    {{ $link := $pageTranslations.Get .Lang }}
+    {{ if $link }}
+      {{ if eq .Lang $pageLang }}
+        <span class="rounded px-2 py-1 bg-primary text-white" aria-current="page">{{ .Label }}</span>
+      {{ else }}
+        <a
+          class="rounded px-2 py-1 text-text-dark hover:bg-light dark:text-darkmode-text-dark dark:hover:bg-darkmode-light"
+          href="{{ $link }}"
+          hreflang="{{ .Lang }}"
+          lang="{{ .Lang }}">{{ .Label }}</a>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</nav>
+{{ end }}

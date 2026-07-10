@@ -1,13 +1,13 @@
-############# English navigation ##############
+############# Spanish navigation ##############
 
 # main menu
 [[main]]
-name = "Home"
+name = "Inicio"
 url = "/"
 weight = 1
 
 [[main]]
-name = "About"
+name = "Sobre mí"
 url = "/about"
 weight = 2
 
@@ -17,19 +17,19 @@ url = "/blog"
 weight = 3
 
 [[main]]
-name = "Publications"
+name = "Publicaciones"
 url = "/publications"
 weight = 4
 
 [[main]]
-name = "Contact"
+name = "Contacto"
 url = "/contact"
 weight = 5
 
 
 # footer menu
 [[footer]]
-name = "About"
+name = "Sobre mí"
 url = "/about"
 weight = 1
 
@@ -39,16 +39,16 @@ url = "/blog"
 weight = 2
 
 [[footer]]
-name = "Publications"
+name = "Publicaciones"
 url = "/publications"
 weight = 3
 
 [[footer]]
-name = "Contact"
+name = "Contacto"
 url = "/contact"
 weight = 4
 
 [[footer]]
-name = "Privacy"
+name = "Privacidad"
 url = "/privacy"
 weight = 5
