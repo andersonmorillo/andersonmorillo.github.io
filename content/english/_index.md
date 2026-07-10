@@ -39,8 +39,8 @@ features:
     image: "/images/service-3.png"
     content: "Open to collaboration on NLP, applied AI, and software projects."
     bulletpoints:
-      - "Email: andersonmorillo@gmail.com"
-      - "Also: badboysa68@gmail.com"
+      - "Email: amorillo@utb.edu.co"
+      - "Also: andersonmorillodiaz31@gmail.com"
       - "GitHub and LinkedIn in the footer"
     button:
       enable: true

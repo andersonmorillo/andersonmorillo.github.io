@@ -18,4 +18,4 @@ Las entradas del blog y las páginas de publicaciones pueden enlazar a sitios de
 
 ### Contacto
 
-Para preguntas de privacidad, escribe a [andersonmorillo@gmail.com](mailto:andersonmorillo@gmail.com).
+Para preguntas de privacidad, escribe a [amorillo@utb.edu.co](mailto:amorillo@utb.edu.co).
