@@ -2,7 +2,7 @@
 title: "📊 Crea tu propio corpus de frecuencia de unigrama usando datos de Google"
 description: "Aprende a procesar un gran corpus de unigramas en inglés y obtener frecuencias relativas usando Python."
 date: 2025-06-06T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/code.jpg"
 categories: ["NLP"]
 author: "Anderson Morillo"
 tags: ["Python", "NLP", "Corpus", "Google Ngram"]

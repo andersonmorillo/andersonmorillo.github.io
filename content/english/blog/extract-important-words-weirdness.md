@@ -2,7 +2,7 @@
 title: "🔍 Extracting Important Words Using Weirdness"
 description: "Discover how to extract meaningful and rare words from text using the 'weirdness' metric pioneered in NLP."
 date: 2025-06-06T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/nlp.png"
 categories: ["NLP"]
 author: "Anderson Morillo"
 tags: ["NLP", "text analysis", "Python"]
