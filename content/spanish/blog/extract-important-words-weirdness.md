@@ -2,7 +2,7 @@
 title: "🔍 Extracción de palabras importantes con Weirdness"
 description: "Cómo extraer palabras significativas y poco frecuentes de un texto usando la métrica de weirdness en NLP."
 date: 2025-06-06T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/nlp.png"
 categories: ["NLP"]
 author: "Anderson Morillo"
 tags: ["NLP", "text analysis", "Python"]

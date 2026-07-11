@@ -3,7 +3,8 @@
 banner:
   title: "Anderson Morillo"
   content: "Ingeniero de IA e investigador en NLP: sistemas RAG, transformers fine-tuned e IA en producción. Notas sobre investigación en IA, artículos de SemEval y proyectos prácticos de NLP."
-  image: "/images/banner.png"
+  image: "/images/home-banner.png"
+  image_dark: "/images/home-banner-dark.png"
   button:
     enable: true
     label: "Ver publicaciones"
@@ -12,7 +13,8 @@ banner:
 # Features
 features:
   - title: "Investigación y publicaciones"
-    image: "/images/service-1.png"
+    image: "/images/home-research.png"
+    image_dark: "/images/home-research-dark.png"
     content: "Trabajo revisado por pares sobre relatedness semántica, detección de persuasión, filtrado de alucinaciones y recuperación biomédica."
     bulletpoints:
       - "Artículos de SemEval (2023–2025)"
@@ -24,7 +26,8 @@ features:
       link: "/publications"
 
   - title: "Blog y notas"
-    image: "/images/service-2.png"
+    image: "/images/home-blog.png"
+    image_dark: "/images/home-blog-dark.png"
     content: "Escritos prácticos sobre herramientas de NLP, construcción de corpus y protocolos de agentes."
     bulletpoints:
       - "Guías de Model Context Protocol (MCP)"
@@ -36,7 +39,8 @@ features:
       link: "/blog"
 
   - title: "Colaborar"
-    image: "/images/service-3.png"
+    image: "/images/home-collaborate.png"
+    image_dark: "/images/home-collaborate-dark.png"
     content: "Abierto a colaborar en NLP, IA aplicada y proyectos de software."
     bulletpoints:
       - "Correo: amorillo@utb.edu.co"

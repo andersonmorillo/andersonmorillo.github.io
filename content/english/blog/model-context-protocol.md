@@ -2,7 +2,7 @@
 title: "🚦 Quick Guide: How Model Context Protocol (MCP) Works"
 description: "An introduction to the Model Context Protocol (MCP) including its transport layer, usage with Fast Agent, and integration examples."
 date: 2025-06-23T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/mcp.png"
 categories: ["AI", "NLP"]
 author: "Anderson Morillo"
 tags: ["MCP", "Model Context Protocol", "Fast Agent", "AI Agents"]

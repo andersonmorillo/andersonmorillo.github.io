@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section publications-page">
+    <div class="container">
+      {{ with .Content }}
+        <p class="publications-intro mx-auto mb-12 max-w-3xl text-center text-lg text-text-light dark:text-darkmode-text-light">
+          {{ . | plainify }}
+        </p>
+      {{ end }}
+
+      <div class="publications-list mx-auto max-w-4xl">
+        {{ range (.RegularPages.ByDate.Reverse) }}
+          {{ partial "components/publication-card" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

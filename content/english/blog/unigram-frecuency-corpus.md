@@ -2,7 +2,7 @@
 title: "📊 Build your own unigram frequency corpus with Google data"
 description: "Learn how to process a large English unigram corpus and compute relative frequencies with Python."
 date: 2025-06-06T00:00:00Z
-image: "/images/image-placeholder.png"
+image: "/images/code.jpg"
 categories: ["NLP"]
 author: "Anderson Morillo"
 tags: ["Python", "NLP", "Corpus", "Google Ngram"]

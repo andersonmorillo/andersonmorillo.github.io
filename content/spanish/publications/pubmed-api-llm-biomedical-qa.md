@@ -1,10 +1,11 @@
 ---
 title: "PubMed API and LLM-Driven Hybrid Retrieval System for Biomedical Question Answering"
-description: "Sistema híbrido que combina recuperación vía PubMed API con métodos basados en LLM para respuesta a preguntas biomédicas."
+description: "QA biomédico eficiente en recursos: extracción de términos con LLM, weirdness, PubMed API y RAG con Qwen3-30B-A3B sobre BioASQ."
 date: 2025-01-01T00:00:00Z
 categories: ["Research"]
+venue_short: "IEEE C3 2025"
 author: "Anderson Morillo"
-tags: ["Biomedical Question Answering", "Information Retrieval", "Large Language Models", "PubMed API", "Hybrid Retrieval"]
+tags: ["Biomedical Question Answering", "Information Retrieval", "Large Language Models", "PubMed API", "Hybrid Retrieval", "RAG"]
 draft: false
 ---
 
@@ -16,6 +17,33 @@ draft: false
 
 **Enlaces:** [IEEE Xplore](https://ieeexplore.ieee.org/document/11340582)
 
+> El PDF completo no estuvo disponible para extracción automática (acceso IEEE). El resumen siguiente se basa en el abstract oficial publicado y en los metadatos del artículo.
+
 ## Resumen
 
-Este artículo presenta un sistema de recuperación híbrido para respuesta a preguntas biomédicas que combina la API de PubMed con métodos basados en LLM. El enfoque integra recuperación estructurada de literatura biomédica con capacidades de modelos de lenguaje grandes para mejorar la precisión y la relevancia al responder preguntas biomédicas.
+Este artículo de conferencia presenta una arquitectura de respuesta a preguntas biomédicas **eficiente en recursos**. En lugar de depender solo de stacks densos de alto coste, combina extracción de términos clave con LLM y puntuación estadística de **weirdness** con recuperación de documentos vía la **API de PubMed**, y genera respuestas con ingeniería de prompts y RAG usando **Qwen3-30B-A3B**.
+
+## Problema
+
+Los sistemas de QA biomédico suelen intercambiar precisión por grandes presupuestos de cómputo en recuperación y generación. Los autores buscan un pipeline más ligero que siga usando acceso estructurado a literatura (PubMed) y LLMs modernos, orientado a despliegues donde el coste computacional importa.
+
+## Método
+
+Según el abstract oficial, el sistema:
+
+- Extrae términos clave con modelos de lenguaje grandes  
+- Puntúa términos con weirdness estadística respecto a un corpus general  
+- Recupera literatura mediante la API de PubMed  
+- Genera respuestas con prompting few-shot e instruccional más **Retrieval-Augmented Generation (RAG)** con el modelo **Qwen3-30B-A3B**  
+
+La evaluación se reporta sobre el benchmark **BioASQ**.
+
+## Resultados
+
+El abstract indica **desempeño competitivo en tipos Factoid y Summary** en BioASQ. Aquí no se reiteran cifras exactas porque el PDF completo no pudo verificarse; consulta el registro IEEE para tablas y detalle experimental.
+
+## Por qué importa
+
+- Conecta la línea de trabajo previa en **weirdness** del laboratorio con recuperación biomédica  
+- Enfatiza un diseño **híbrido ligero** (API + RAG con LLM) frente a solo búsqueda densa de alto cómputo  
+- Sitúa el stack en QA biomédico práctico donde PubMed sigue siendo la fuente de literatura de referencia
