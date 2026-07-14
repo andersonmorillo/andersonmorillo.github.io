@@ -8,9 +8,11 @@ draft: false
 
 role: "AI Engineer · NLP Researcher"
 location: "Cartagena, Bolívar, Colombia"
-summary: "I build NLP and AI systems end to end — from RAG-based chatbots and fine-tuned transformers to real-time data platforms — and ship them with Docker, FastAPI, and cloud infrastructure."
+summary: "I build NLP and AI systems end to end — from RAG-based chatbots and fine-tuned transformers to real-time data platforms — and ship them with Docker, FastAPI, and cloud infrastructure. I am a graduate researcher at [VerbaNexAI Lab](https://github.com/VerbaNexAI) (UTB), working on NLP, shared tasks, and applied AI."
 
 affiliations:
+  - name: VerbaNexAI Lab
+    link: "https://github.com/VerbaNexAI"
   - name: Universidad Tecnológica de Bolívar
     link: "https://www.utb.edu.co/"
   - name: COTECMAR
@@ -56,9 +58,9 @@ experience:
     period: April 2026 – present
     description: Leading scalable deployment of a virtual assistant with user-trained local LLMs, combining on-premise fine-tuning and RAG for specialized technical documentation. Designed a work-order management system with operational KPI tracking.
   - title: Research Assistant
-    org: Universidad Tecnológica de Bolívar
+    org: VerbaNexAI Lab · Universidad Tecnológica de Bolívar
     period: July 2024 – present
-    description: Hallucination-detection evaluation pipelines; fine-tuning transformers (BERT, DeBERTa) for semantic framing and persuasion detection with ONNX export; reproducible experimentation with PyTorch, Hugging Face, and scikit-learn.
+    description: Graduate researcher at VerbaNexAI Lab (UTB). Hallucination-detection evaluation pipelines; fine-tuning transformers (BERT, DeBERTa) for semantic framing and persuasion detection with ONNX export; reproducible experimentation with PyTorch, Hugging Face, and scikit-learn.
   - title: AI Architecture Consultant
     org: Freelance
     period: January 2026

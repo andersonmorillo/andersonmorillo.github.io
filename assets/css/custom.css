@@ -82,13 +82,46 @@
   }
 }
 
+/* Services page */
+.services-page .services-card {
+  transition: transform 0.2s ease;
+}
+
+.services-page .services-card:hover {
+  transform: translateY(-2px);
+}
+
+.services-page .services-hero,
+.services-page .services-card,
+.services-page .services-featured,
+.services-page .services-cta {
+  animation: about-fade-up 0.5s ease both;
+}
+
+.services-page .services-card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.services-page .services-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.services-page .services-card:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.services-page .services-card:nth-child(4) {
+  animation-delay: 0.2s;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .about-hero,
   .about-block,
   .about-timeline-item,
   .about-chip,
   .publications-intro,
-  .publication-card {
+  .publication-card,
+  .services-page .services-hero,
+  .services-page .services-card,
+  .services-page .services-featured,
+  .services-page .services-cta {
     animation: none;
     transition: none;
   }

@@ -1,0 +1,85 @@
+{{ define "main" }}
+  {{ $labels := .Params.labels | default dict }}
+  <section class="section-sm services-page">
+    <div class="container">
+      <div class="services-hero mb-12 max-w-3xl">
+        <h1 class="h2 mb-4">{{ .Title }}</h1>
+        {{ with .Params.intro }}
+          <p class="text-lg leading-relaxed">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+
+      {{ with .Params.services }}
+        <div class="mb-16">
+          <h2 class="h4 mb-8">{{ $labels.services | default "Services" }}</h2>
+          <div class="row gy-6">
+            {{ range . }}
+              <div class="md:col-6">
+                <article class="services-card h-full rounded-lg bg-light p-6 dark:bg-darkmode-light">
+                  <h3 class="h5 mb-3">{{ .title }}</h3>
+                  <p class="mb-4 text-text-light dark:text-darkmode-text-light">
+                    {{ .summary | markdownify }}
+                  </p>
+                  {{ with .bullets }}
+                    <ul class="mb-0 space-y-2">
+                      {{ range . }}
+                        <li class="relative pl-6">
+                          <i class="fa fa-check absolute left-0 top-1.5"></i>
+                          {{ . | markdownify }}
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </article>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{ with .Params.featured_project }}
+        <div class="services-featured mb-16 rounded-xl border border-border p-6 md:p-10 dark:border-darkmode-border">
+          <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase">
+            {{ $labels.featured | default "Featured project" }}
+          </p>
+          <h2 class="h4 mb-2">{{ .title }}</h2>
+          <p class="mb-1 text-sm text-text-light dark:text-darkmode-text-light">
+            {{ .location }}{{ with .org }} · {{ . }}{{ end }}
+          </p>
+          {{ with .role }}
+            <p class="mb-4 font-semibold text-primary">{{ . }}</p>
+          {{ end }}
+          {{ with .description }}
+            <p class="mb-4 leading-relaxed">{{ . | markdownify }}</p>
+          {{ end }}
+          {{ with .stack }}
+            <p class="mb-6 text-sm text-text-light dark:text-darkmode-text-light">{{ . }}</p>
+          {{ end }}
+          {{ with .link }}
+            <a
+              class="btn btn-outline-primary"
+              href="{{ . }}"
+              target="_blank"
+              rel="noopener">
+              {{ $.Params.featured_project.link_label | default "View project" }}
+              <i class="fa fa-external-link pl-2"></i>
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ with .Params.cta }}
+        <div class="services-cta rounded-xl bg-light px-6 py-10 text-center dark:bg-darkmode-light md:px-10">
+          <h2 class="h4 mb-3">{{ $labels.cta_title | default "Get in touch" }}</h2>
+          {{ with $labels.cta_body }}
+            <p class="mb-6 mx-auto max-w-2xl">{{ . | markdownify }}</p>
+          {{ end }}
+          <a class="btn btn-primary" href="{{ .link | absURL }}">
+            {{ .label }}
+            <i class="fa fa-arrow-right pl-2"></i>
+          </a>
+        </div>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

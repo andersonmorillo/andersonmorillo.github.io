@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Anderson Morillo"
-  content: "AI Engineer and NLP Researcher building RAG systems, fine-tuned transformers, and production AI platforms. Notes on AI research, SemEval papers, and practical NLP projects."
+  content: "AI Engineer and NLP Researcher at VerbaNexAI Lab (UTB). Building RAG systems, fine-tuned transformers, and production AI platforms. Notes on AI research, SemEval papers, and practical NLP projects."
   image: "/images/home-banner.png"
   image_dark: "/images/home-banner-dark.png"
   button:
@@ -17,6 +17,7 @@ features:
     image_dark: "/images/home-research-dark.png"
     content: "Peer-reviewed work on semantic relatedness, persuasion detection, hallucination filtering, and biomedical retrieval."
     bulletpoints:
+      - "Member of [VerbaNexAI Lab](https://github.com/VerbaNexAI) at UTB"
       - "SemEval shared-task papers (2023–2025)"
       - "Hybrid retrieval for biomedical QA"
       - "LLM and classical NLP approaches"
@@ -43,11 +44,12 @@ features:
     image_dark: "/images/home-collaborate-dark.png"
     content: "Open to collaboration on NLP, applied AI, and software projects."
     bulletpoints:
+      - "See [Services](/services) for what I offer"
       - "Email: amorillo@utb.edu.co"
       - "Also: andersonmorillodiaz31@gmail.com"
       - "GitHub and LinkedIn in the footer"
     button:
       enable: true
-      label: "Contact"
-      link: "/contact"
+      label: "View services"
+      link: "/services"
 ---

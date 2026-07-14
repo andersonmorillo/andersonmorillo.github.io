@@ -22,9 +22,14 @@ url = "/publications"
 weight = 4
 
 [[main]]
+name = "Servicios"
+url = "/services"
+weight = 5
+
+[[main]]
 name = "Contacto"
 url = "/contact"
-weight = 5
+weight = 6
 
 
 # footer menu
@@ -44,11 +49,16 @@ url = "/publications"
 weight = 3
 
 [[footer]]
+name = "Servicios"
+url = "/services"
+weight = 4
+
+[[footer]]
 name = "Contacto"
 url = "/contact"
-weight = 4
+weight = 5
 
 [[footer]]
 name = "Privacidad"
 url = "/privacy"
-weight = 5
+weight = 6

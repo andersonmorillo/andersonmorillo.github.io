@@ -8,9 +8,11 @@ draft: false
 
 role: "Ingeniero de IA · Investigador en NLP"
 location: "Cartagena, Bolívar, Colombia"
-summary: "Construyo sistemas de NLP e IA de extremo a extremo — desde chatbots con RAG y transformers fine-tuned hasta plataformas de datos en tiempo real — y los llevo a producción con Docker, FastAPI e infraestructura en la nube."
+summary: "Construyo sistemas de NLP e IA de extremo a extremo — desde chatbots con RAG y transformers fine-tuned hasta plataformas de datos en tiempo real — y los llevo a producción con Docker, FastAPI e infraestructura en la nube. Soy investigador de posgrado en el [VerbaNexAI Lab](https://github.com/VerbaNexAI) (UTB), en NLP, shared tasks e IA aplicada."
 
 affiliations:
+  - name: VerbaNexAI Lab
+    link: "https://github.com/VerbaNexAI"
   - name: Universidad Tecnológica de Bolívar
     link: "https://www.utb.edu.co/"
   - name: COTECMAR
@@ -56,9 +58,9 @@ experience:
     period: Abril 2026 – presente
     description: Despliegue escalable de un asistente virtual con LLMs locales entrenados por el usuario, combinando fine-tuning on-premise y RAG sobre documentación técnica especializada. Diseño de un sistema de gestión de órdenes de trabajo con KPIs operativos.
   - title: Asistente de investigación
-    org: Universidad Tecnológica de Bolívar
+    org: VerbaNexAI Lab · Universidad Tecnológica de Bolívar
     period: Julio 2024 – presente
-    description: Pipelines de evaluación para detección de alucinaciones; fine-tuning de transformers (BERT, DeBERTa) para framing semántico y persuasión con exportación ONNX; experimentación con PyTorch, Hugging Face y scikit-learn.
+    description: Investigador de posgrado en VerbaNexAI Lab (UTB). Pipelines de evaluación para detección de alucinaciones; fine-tuning de transformers (BERT, DeBERTa) para framing semántico y persuasión con exportación ONNX; experimentación con PyTorch, Hugging Face y scikit-learn.
   - title: Consultor de arquitectura de IA
     org: Freelance
     period: Enero 2026

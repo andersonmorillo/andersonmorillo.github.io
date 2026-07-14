@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Anderson Morillo"
-  content: "Ingeniero de IA e investigador en NLP: sistemas RAG, transformers fine-tuned e IA en producción. Notas sobre investigación en IA, artículos de SemEval y proyectos prácticos de NLP."
+  content: "Ingeniero de IA e investigador en NLP en el VerbaNexAI Lab (UTB): sistemas RAG, transformers fine-tuned e IA en producción. Notas sobre investigación en IA, artículos de SemEval y proyectos prácticos de NLP."
   image: "/images/home-banner.png"
   image_dark: "/images/home-banner-dark.png"
   button:
@@ -17,6 +17,7 @@ features:
     image_dark: "/images/home-research-dark.png"
     content: "Trabajo revisado por pares sobre relatedness semántica, detección de persuasión, filtrado de alucinaciones y recuperación biomédica."
     bulletpoints:
+      - "Miembro del [VerbaNexAI Lab](https://github.com/VerbaNexAI) en la UTB"
       - "Artículos de SemEval (2023–2025)"
       - "Recuperación híbrida para QA biomédico"
       - "Enfoques con LLM y NLP clásico"
@@ -43,11 +44,12 @@ features:
     image_dark: "/images/home-collaborate-dark.png"
     content: "Abierto a colaborar en NLP, IA aplicada y proyectos de software."
     bulletpoints:
+      - "Ver [Servicios](/services) para lo que ofrezco"
       - "Correo: amorillo@utb.edu.co"
       - "También: andersonmorillodiaz31@gmail.com"
       - "GitHub y LinkedIn en el pie de página"
     button:
       enable: true
-      label: "Contacto"
-      link: "/contact"
+      label: "Ver servicios"
+      link: "/services"
 ---
