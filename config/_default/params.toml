@@ -85,7 +85,7 @@ image = "images/og-image.png"
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
 [site_verification]
 # Paste your Google Search Console HTML-tag content value (e.g. abc123...)
-google = ""   # Your verification code
+google = "uiCSQnoHWX6Ei3aS9a4F_ujbVb3iUvG6dTc5Bv_vgJE"   # Your verification code
 # Paste Microsoft Bing Webmaster verification code
 bing = ""     # Your verification code
 baidu = ""    # Your verification code
