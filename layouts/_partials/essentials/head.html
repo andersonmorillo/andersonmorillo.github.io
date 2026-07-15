@@ -9,12 +9,11 @@
 {{ if site.Params.theme_switcher }}
   <script>
     (function () {
-      var darkMode = localStorage.getItem("theme") === "dark";
-      if (localStorage.getItem("theme") === null) {
-        // Mobile (< lg / 1024px): default dark; do not write localStorage
-        if (window.matchMedia("(max-width: 1023px)").matches) {
-          darkMode = true;
-        } else {
+      // Mobile (< lg / 1024px): always dark (switcher is hidden there)
+      var darkMode = window.matchMedia("(max-width: 1023px)").matches;
+      if (!darkMode) {
+        darkMode = localStorage.getItem("theme") === "dark";
+        if (localStorage.getItem("theme") === null) {
           darkMode = {{ if eq site.Params.theme_default "dark" }}true{{ else }}false{{ end }};
           {{ if eq site.Params.theme_default "system" }}
           if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
