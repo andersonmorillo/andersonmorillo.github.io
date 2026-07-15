@@ -5,38 +5,67 @@ description: "Applied AI services — conversational RAG systems, dataset resear
 layout: "services"
 draft: false
 
-intro: "I help teams design and ship applied AI and data systems — from RAG assistants and research datasets to real-time environmental monitoring. Below are the main areas I work on, grounded in production and research experience."
+headline: "Applied AI systems your team can run in production"
+intro: "I help engineering and research teams ship document-grounded assistants, evaluation pipelines, and monitoring platforms—backed by SemEval research and real deployments."
+
+proof:
+  - "SemEval 2023–2025"
+  - "IEEE C3 2025"
+  - "VerbaNexAI Lab · UTB"
+  - "Live SGM dashboards"
 
 labels:
   services: What I offer
   featured: Featured project
-  cta_title: Interested in working together?
-  cta_body: Tell me about your use case — NLP, monitoring systems, or data platforms.
+  process: How we work
+  faq: Common questions
+  cta_title: Ready to scope a RAG or monitoring project?
+  cta_body: Tell me about your use case—NLP assistants, datasets, or IoT monitoring. I usually reply within 1–2 business days.
+  problem: Problem
+  approach: Approach
+  result: Result
+  for: For
+  includes: What's included
+
+hero_cta:
+  label: "Start a conversation"
+  link: "/contact"
+hero_cta_secondary:
+  label: "See featured project"
+  link: "#featured"
 
 services:
   - title: "Conversational AI & RAG systems"
-    summary: "Domain-specific assistants grounded in your documents, with local or private LLM options and production-ready APIs."
+    icon: "comments"
+    for: "Teams drowning in technical or operational documentation"
+    summary: "Document-grounded assistants with private or on-prem LLM options and production APIs—so answers stay tied to your corpus."
     bullets:
-      - "RAG over technical or operational documentation"
-      - "User-trained / on-premise LLM setups"
+      - "RAG over manuals, SOPs, and internal docs"
+      - "Private / on-premise LLM setups when data cannot leave"
       - "FastAPI backends and workflow automation (e.g. n8n)"
 
   - title: "Dataset research, evaluation & creation"
-    summary: "Research-oriented work on building, curating, and evaluating datasets for NLP and applied AI — not only training models."
+    icon: "database"
+    for: "Research and product teams that need reliable data, not only models"
+    summary: "Corpus design, curation, and evaluation pipelines so datasets are fit for shared tasks, training, or quality gates."
     bullets:
-      - "Corpus design and dataset creation for research or shared tasks"
-      - "Data quality evaluation and suitability analysis"
-      - "Evaluation pipelines (e.g. hallucination / labeling consistency) for research teams"
+      - "Corpus design for research or shared tasks"
+      - "Data quality and suitability analysis"
+      - "Evaluation pipelines (hallucination / labeling consistency)"
 
   - title: "AI architecture for monitoring platforms"
-    summary: "Architecture for multi-site sensor and alert systems — ingestion, analytics hooks, and early-warning flows."
+    icon: "project-diagram"
+    for: "Organizations running multi-site sensors and early-warning flows"
+    summary: "End-to-end AI/data architecture for ingestion, analytics hooks, and alerting—designed to scale across sites."
     bullets:
-      - "End-to-end AI/data architecture for environmental or hydraulic monitoring"
-      - "Real-time ingestion and alerting design"
-      - "Requirements and system design for multi-city deployments"
+      - "Environmental or hydraulic monitoring architectures"
+      - "Real-time ingestion and alert design"
+      - "Requirements and design for multi-city deployments"
 
   - title: "IoT & meteorological data platforms"
-    summary: "Platforms that collect, store, and visualize high-frequency meteorological and IoT sensor data."
+    icon: "cloud-sun-rain"
+    for: "Operators who need station-level boards they can trust daily"
+    summary: "Collect, store, and visualize high-frequency meteorological and IoT data with APIs and operator dashboards."
     bullets:
       - "TimescaleDB / time-series storage and ETL"
       - "REST APIs and operational dashboards"
@@ -48,11 +77,36 @@ featured_project:
   org: "Corporación Del Laboratorio al Campo · EEDAS"
   role: "Software Engineer"
   stack: "TimescaleDB · REST APIs · Streamlit / web dashboards · IoT ETL"
-  description: "Meteorological monitoring system to track weather variables across stations on San Andrés Island. Operators select station dashboards (e.g. Brooks Hill, RSU, Interaseo) for recent observations and board-style views used in day-to-day monitoring."
+  problem: "Operators needed clear, station-level weather boards for day-to-day monitoring across the island."
+  approach: "Time-series ingestion, REST APIs, and web dashboards so each station can be selected and reviewed quickly."
+  result: "Live boards in use for stations such as Brooks Hill, RSU, and Interaseo."
+  description: "Meteorological monitoring system to track weather variables across stations on San Andrés Island."
   link: "https://iotga-eedas.com"
   link_label: "Open live dashboards"
+  secondary_link: "/contact"
+  secondary_label: "Start a similar project"
+
+process:
+  - title: "Discover"
+    body: "Clarify goals, data sources, constraints (privacy, latency, on-prem), and success criteria."
+  - title: "Design"
+    body: "Agree on architecture, evaluation approach, and a thin vertical that can ship first."
+  - title: "Build"
+    body: "Implement APIs, pipelines, and UIs with iterative demos—not a big-bang handoff."
+  - title: "Handoff"
+    body: "Document, deploy, and transfer ownership so your team can operate and extend the system."
+
+faq:
+  - q: "Do you work remotely?"
+    a: "Yes. Most engagements are remote with clear async updates; on-site is possible in Colombia when needed."
+  - q: "Can you work with private or on-premise LLMs?"
+    a: "Yes. RAG and assistant work can stay on your network when documents or models cannot leave the organization."
+  - q: "How do projects usually start?"
+    a: "A short conversation to scope the problem, then a focused first milestone (often a working vertical in weeks, not months)."
+  - q: "Is this only research, or production too?"
+    a: "Both. Shared-task research informs the methods; production work (APIs, dashboards, monitoring) is what I ship for teams."
 
 cta:
-  label: "Contact"
+  label: "Email Anderson"
   link: "/contact"
 ---

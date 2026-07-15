@@ -18,6 +18,20 @@ html.dark {
   }
 }
 
+/* Logo: ensure light/dark assets swap with class-based theme */
+.img-dark {
+  display: none;
+}
+.img-light {
+  display: initial;
+}
+html.dark .img-dark {
+  display: initial;
+}
+html.dark .img-light {
+  display: none;
+}
+
 /* Keep the logo small enough on phones so the navbar does not wrap */
 .navbar-brand img {
   max-width: 7.5rem;
@@ -30,6 +44,65 @@ html.dark {
 @media (min-width: 1024px) {
   .navbar-brand img {
     max-width: 12.5rem;
+  }
+}
+
+/* Homepage hero */
+.home-hero {
+  position: relative;
+  isolation: isolate;
+}
+.home-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(246, 246, 246, 0.9) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+}
+html.dark .home-hero::before {
+  background: linear-gradient(
+    180deg,
+    rgba(34, 34, 34, 0.85) 0%,
+    rgba(28, 28, 28, 0) 70%
+  );
+}
+
+.home-hero-kicker,
+.home-proof,
+.home-hero-ctas,
+.home-featured {
+  animation: about-fade-up 0.55s ease both;
+}
+.home-proof {
+  animation-delay: 0.06s;
+}
+.home-hero-ctas {
+  animation-delay: 0.1s;
+}
+.home-featured {
+  animation-delay: 0.08s;
+}
+
+.home-proof-chip {
+  background-color: var(--color-light);
+  color: var(--color-text-dark);
+}
+html.dark .home-proof-chip {
+  background-color: var(--color-darkmode-light);
+  color: var(--color-darkmode-text-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-hero-kicker,
+  .home-proof,
+  .home-hero-ctas,
+  .home-featured {
+    animation: none;
   }
 }
 
@@ -119,16 +192,44 @@ html.dark {
 
 /* Services page */
 .services-page .services-card {
-  transition: transform 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .services-page .services-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+}
+
+.services-proof-chip {
+  background-color: var(--color-light);
+  color: var(--color-text-dark);
+}
+html.dark .services-proof-chip {
+  background-color: var(--color-darkmode-light);
+  color: var(--color-darkmode-text-dark);
+}
+
+.services-faq-item summary {
+  list-style: none;
+}
+.services-faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.services-faq-item summary::after {
+  content: "+";
+  float: right;
+  font-weight: 600;
+}
+.services-faq-item[open] summary::after {
+  content: "–";
 }
 
 .services-page .services-hero,
 .services-page .services-card,
 .services-page .services-featured,
+.services-page .services-process,
+.services-page .services-faq,
 .services-page .services-cta {
   animation: about-fade-up 0.5s ease both;
 }
@@ -156,6 +257,8 @@ html.dark {
   .services-page .services-hero,
   .services-page .services-card,
   .services-page .services-featured,
+  .services-page .services-process,
+  .services-page .services-faq,
   .services-page .services-cta {
     animation: none;
     transition: none;

@@ -6,52 +6,75 @@ description: "AI Engineer and NLP Researcher at VerbaNexAI Lab (UTB). RAG system
 # Banner
 banner:
   title: "Anderson Morillo"
-  content: "AI Engineer and NLP Researcher at VerbaNexAI Lab (UTB). Building RAG systems, fine-tuned transformers, and production AI platforms. Notes on AI research, SemEval papers, and practical NLP projects."
+  kicker: "AI Engineer · NLP Researcher"
+  content: "I build production RAG systems and publish NLP research on retrieval, persuasion, and hallucination filtering."
+  support: "VerbaNexAI Lab (UTB) · applied AI for industry and research."
   image: "/images/home-banner.png"
   image_dark: "/images/home-banner-dark.png"
+  proof:
+    - "SemEval 2023–2025"
+    - "IEEE C3 2025"
+    - "VerbaNexAI Lab · UTB"
   button:
     enable: true
-    label: "View publications"
+    label: "View services"
+    link: "/services"
+  button_secondary:
+    enable: true
+    label: "Publications"
     link: "/publications"
+
+featured_work:
+  enable: true
+  label: "Featured work"
+  title: "SGM — Meteorological dashboards (San Andrés Island)"
+  problem_label: "Problem"
+  approach_label: "Approach"
+  result_label: "Result"
+  problem: "Operators needed clear, station-level weather boards for day-to-day monitoring."
+  approach: "TimescaleDB ingestion, REST APIs, and web dashboards for multi-station IoT data."
+  result: "Live boards used across stations such as Brooks Hill, RSU, and Interaseo."
+  link: "https://iotga-eedas.com"
+  link_label: "Open live dashboards"
+  secondary_link: "/services"
+  secondary_label: "See all services"
 
 # Features
 features:
-  - title: "Research & publications"
+  - title: "Peer-reviewed NLP that ships"
     image: "/images/home-research.png"
     image_dark: "/images/home-research-dark.png"
-    content: "Peer-reviewed work on semantic relatedness, persuasion detection, hallucination filtering, and biomedical retrieval."
+    content: "Shared-task and conference work on problems that show up in real systems—relatedness, persuasion, hallucinations, and biomedical retrieval."
     bulletpoints:
-      - "Member of [VerbaNexAI Lab](https://github.com/VerbaNexAI) at UTB"
-      - "SemEval shared-task papers (2023–2025)"
-      - "Hybrid retrieval for biomedical QA"
-      - "LLM and classical NLP approaches"
+      - "SemEval systems for framing, relatedness, and hallucination spans (2023–2025)"
+      - "Hybrid PubMed retrieval + LLM pipeline for biomedical QA (IEEE C3 2025)"
+      - "Research rooted in VerbaNexAI Lab at Universidad Tecnológica de Bolívar"
     button:
       enable: true
       label: "Browse publications"
       link: "/publications"
 
-  - title: "Blog & notes"
+  - title: "Notes you can reuse"
     image: "/images/home-blog.png"
     image_dark: "/images/home-blog-dark.png"
-    content: "Practical write-ups on NLP tooling, corpus building, and agent protocols. Many posts are in Spanish."
+    content: "Practical write-ups on tooling and methods—not just theory. Many posts are also in Spanish."
     bulletpoints:
-      - "Model Context Protocol (MCP) guides"
-      - "Weirdness-based keyword extraction"
-      - "Google unigram frequency corpora"
+      - "RAG over technical documentation"
+      - "Model Context Protocol (MCP) for agent tooling"
+      - "Weirdness-based keyword extraction and unigram corpora"
     button:
       enable: true
       label: "Read the blog"
       link: "/blog"
 
-  - title: "Collaborate"
+  - title: "What I help teams ship"
     image: "/images/home-collaborate.png"
     image_dark: "/images/home-collaborate-dark.png"
-    content: "Open to collaboration on NLP, applied AI, and software projects."
+    content: "Applied AI and data systems—from document-grounded assistants to monitoring platforms—backed by research and production work."
     bulletpoints:
-      - "See [Services](/services) for what I offer"
-      - "Email: amorillo@utb.edu.co"
-      - "Also: andersonmorillodiaz31@gmail.com"
-      - "GitHub and LinkedIn in the footer"
+      - "Conversational RAG and private/on-prem LLM setups"
+      - "Dataset research, evaluation, and creation"
+      - "AI architecture for environmental and IoT monitoring"
     button:
       enable: true
       label: "View services"

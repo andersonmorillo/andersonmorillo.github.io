@@ -28,6 +28,10 @@ links:
     url: "https://github.com/andersonmorillo"
   - label: LinkedIn
     url: "https://www.linkedin.com/in/anderson-morillo-792515153/"
+  - label: Google Scholar
+    url: "https://scholar.google.com/citations?user=cyj27zMAAAAJ"
+  - label: ORCID
+    url: "https://orcid.org/0009-0005-7944-3342"
 
 labels:
   interests: Interests
