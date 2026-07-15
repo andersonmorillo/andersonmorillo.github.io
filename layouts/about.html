@@ -16,7 +16,7 @@
           {{ end }}
         </div>
         <div class="md:col-8 lg:col-9">
-          <p class="about-kicker mb-2 text-sm font-semibold tracking-wide text-primary uppercase">
+          <p class="about-kicker mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
             {{ .Params.role | default "" }}
           </p>
           <h1 class="h2 mb-3">{{ .Title }}</h1>
@@ -76,7 +76,7 @@
                   <h3 class="h6 mb-0">{{ .title }}</h3>
                   <span class="text-sm text-text-light dark:text-darkmode-text-light">{{ .period }}</span>
                 </div>
-                <p class="mb-2 font-semibold text-primary">{{ .org }}</p>
+                <p class="mb-2 font-semibold text-primary dark:text-darkmode-primary">{{ .org }}</p>
                 {{ with .description }}
                   <p class="mb-0 text-text-dark dark:text-darkmode-text-dark">{{ . | markdownify }}</p>
                 {{ end }}
@@ -107,7 +107,7 @@
           <div class="grid gap-6 md:grid-cols-2">
             {{ range . }}
               <div>
-                <p class="mb-2 text-sm font-semibold tracking-wide uppercase text-primary">{{ .group }}</p>
+                <p class="mb-2 text-sm font-semibold tracking-wide uppercase text-primary dark:text-darkmode-primary">{{ .group }}</p>
                 <ul class="about-chips flex flex-wrap gap-2 list-none p-0 m-0">
                   {{ range .items }}
                     <li class="about-chip rounded-md border border-border px-3 py-1.5 text-sm dark:border-darkmode-border">{{ . }}</li>
