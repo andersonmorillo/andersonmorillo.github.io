@@ -1,6 +1,6 @@
 ---
 title: "Servicios"
-meta_title: "Servicios"
+meta_title: "Anderson Morillo — Servicios de IA aplicada y RAG"
 description: "Servicios de IA aplicada — sistemas conversacionales con RAG, investigación y creación de datasets, arquitectura de plataformas de monitoreo e IoT meteorológico."
 layout: "services"
 draft: false

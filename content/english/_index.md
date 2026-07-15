@@ -1,4 +1,8 @@
 ---
+title: "Anderson Morillo"
+meta_title: "Anderson Morillo — AI Engineer & NLP Researcher"
+description: "AI Engineer and NLP Researcher at VerbaNexAI Lab (UTB). RAG systems, SemEval research, transformers, and production AI platforms."
+
 # Banner
 banner:
   title: "Anderson Morillo"

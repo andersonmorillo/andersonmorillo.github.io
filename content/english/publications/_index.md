@@ -1,7 +1,7 @@
 ---
 title: "Publications"
-meta_title: "Publications"
-description: "Research papers on NLP, semantic relatedness, persuasion detection, and biomedical retrieval."
+meta_title: "Anderson Morillo — NLP & AI Research Publications"
+description: "Peer-reviewed NLP papers by Anderson Morillo on semantic relatedness, persuasion detection, hallucination filtering, and biomedical retrieval."
 ---
 
 Peer-reviewed and conference papers on Natural Language Processing and applied AI.

@@ -1,0 +1,94 @@
+{{/* JSON-LD: Person on home/about; ScholarlyArticle or BlogPosting on singles */}}
+{{ $isHome := .IsHome }}
+{{ $isAbout := and (eq .Section "about") (eq .Kind "section") }}
+{{ $isPublication := and (eq .Section "publications") (eq .Kind "page") }}
+{{ $isBlog := and (eq .Section "blog") (eq .Kind "page") }}
+
+{{ if or $isHome $isAbout }}
+  {{ $sameAs := slice
+    "https://github.com/andersonmorillo"
+    "https://www.linkedin.com/in/anderson-morillo-792515153/"
+  }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anderson Morillo",
+    "url": {{ site.BaseURL | jsonify }},
+    "jobTitle": "AI Engineer and NLP Researcher",
+    "email": "amorillo@utb.edu.co",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "VerbaNexAI Lab, Universidad Tecnológica de Bolívar",
+      "url": "https://github.com/VerbaNexAI"
+    },
+    "sameAs": {{ $sameAs | jsonify }}
+  }
+  </script>
+{{ end }}
+
+{{ if $isPublication }}
+  {{ $image := .Params.image | default site.Params.metadata.image }}
+  {{ $imageURL := "" }}
+  {{ with $image }}
+    {{ $imageURL = . | absURL }}
+  {{ end }}
+  {{ $keywords := .Params.tags | default slice }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": {{ .Title | jsonify }},
+    "description": {{ .Description | default .Summary | plainify | jsonify }},
+    "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": {{ .Params.author | default "Anderson Morillo" | jsonify }}
+    },
+    "url": {{ .Permalink | jsonify }},
+    "mainEntityOfPage": {{ .Permalink | jsonify }}
+    {{- with $imageURL -}},
+    "image": {{ . | jsonify }}
+    {{- end -}}
+    {{- with $keywords -}},
+    "keywords": {{ . | jsonify }}
+    {{- end -}}
+    {{- with .Params.venue_short -}},
+    "isPartOf": {
+      "@type": "PublicationVolume",
+      "name": {{ . | jsonify }}
+    }
+    {{- end }}
+  }
+  </script>
+{{ end }}
+
+{{ if $isBlog }}
+  {{ $image := .Params.image | default site.Params.metadata.image }}
+  {{ $imageURL := "" }}
+  {{ with $image }}
+    {{ $imageURL = . | absURL }}
+  {{ end }}
+  {{ $keywords := .Params.tags | default slice }}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ .Title | jsonify }},
+    "description": {{ .Description | default .Summary | plainify | jsonify }},
+    "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
+    "author": {
+      "@type": "Person",
+      "name": {{ .Params.author | default "Anderson Morillo" | jsonify }}
+    },
+    "url": {{ .Permalink | jsonify }},
+    "mainEntityOfPage": {{ .Permalink | jsonify }}
+    {{- with $imageURL -}},
+    "image": {{ . | jsonify }}
+    {{- end -}}
+    {{- with $keywords -}},
+    "keywords": {{ . | jsonify }}
+    {{- end }}
+  }
+  </script>
+{{ end }}

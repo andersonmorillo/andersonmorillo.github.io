@@ -6,6 +6,7 @@ categories: ["Research"]
 venue_short: "SemEval-2023"
 author: "Anderson Morillo"
 tags: ["Natural Language Processing", "Persuasion Detection", "Lexical Features", "News Classification", "Weirdness"]
+image: "/images/og-image.png"
 draft: false
 ---
 

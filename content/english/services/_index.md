@@ -1,6 +1,6 @@
 ---
 title: "Services"
-meta_title: "Services"
+meta_title: "Anderson Morillo — Applied AI & RAG Services"
 description: "Applied AI services — conversational RAG systems, dataset research and creation, monitoring-platform architecture, and meteorological IoT data platforms."
 layout: "services"
 draft: false
