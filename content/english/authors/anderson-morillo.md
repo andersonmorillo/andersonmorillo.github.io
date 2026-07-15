@@ -12,6 +12,14 @@ social:
     icon: fa-brands fa-linkedin
     link: https://www.linkedin.com/in/anderson-morillo-792515153/
 
+  - name: google-scholar
+    icon: fa-solid fa-graduation-cap
+    link: https://scholar.google.com/citations?user=cyj27zMAAAAJ
+
+  - name: orcid
+    icon: fa-brands fa-orcid
+    link: https://orcid.org/0009-0005-7944-3342
+
   - name: email
     icon: fa-solid fa-envelope
     link: mailto:amorillo@utb.edu.co

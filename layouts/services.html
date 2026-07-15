@@ -2,24 +2,132 @@
   {{ $labels := .Params.labels | default dict }}
   <section class="section-sm services-page">
     <div class="container">
-      <div class="services-hero mb-12 max-w-3xl">
-        <h1 class="h2 mb-4">{{ .Title }}</h1>
-        {{ with .Params.intro }}
-          <p class="text-lg leading-relaxed">{{ . | markdownify }}</p>
+      {{/* Hero */}}
+      <div class="services-hero mb-14 max-w-3xl">
+        <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
+          {{ .Title }}
+        </p>
+        {{ with .Params.headline }}
+          <h1 class="h2 mb-4">{{ . }}</h1>
+        {{ else }}
+          <h1 class="h2 mb-4">{{ .Title }}</h1>
         {{ end }}
+        {{ with .Params.intro }}
+          <p class="mb-6 text-lg leading-relaxed">{{ . | markdownify }}</p>
+        {{ end }}
+        {{ with .Params.proof }}
+          <ul class="services-proof mb-8 flex list-none flex-wrap gap-2 p-0">
+            {{ range . }}
+              <li class="services-proof-chip rounded-md border border-border px-3 py-1.5 text-sm dark:border-darkmode-border">
+                {{ . }}
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+        <div class="flex flex-wrap gap-3">
+          {{ with .Params.hero_cta }}
+            <a class="btn btn-primary" href="{{ .link | relLangURL }}">
+              {{ .label }}
+            </a>
+          {{ end }}
+          {{ with .Params.hero_cta_secondary }}
+            <a class="btn btn-outline-primary" href="{{ .link }}">
+              {{ .label }}
+            </a>
+          {{ end }}
+        </div>
       </div>
 
+      {{/* Featured — proof early */}}
+      {{ with .Params.featured_project }}
+        <div
+          id="featured"
+          class="services-featured mb-16 scroll-mt-28 rounded-xl border border-border p-6 dark:border-darkmode-border md:p-10">
+          <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
+            {{ $labels.featured | default "Featured project" }}
+          </p>
+          <h2 class="h4 mb-2">{{ .title }}</h2>
+          <p class="mb-1 text-sm text-text-light dark:text-darkmode-text-light">
+            {{ .location }}{{ with .org }} · {{ . }}{{ end }}
+          </p>
+          {{ with .role }}
+            <p class="mb-6 font-semibold text-primary dark:text-darkmode-primary">{{ . }}</p>
+          {{ end }}
+          <div class="mb-6 grid gap-4 md:grid-cols-3">
+            {{ with .problem }}
+              <div>
+                <p class="mb-1 text-sm font-semibold text-text-dark dark:text-darkmode-text-dark">
+                  {{ $labels.problem | default "Problem" }}
+                </p>
+                <p class="mb-0 text-text-light dark:text-darkmode-text-light">{{ . }}</p>
+              </div>
+            {{ end }}
+            {{ with .approach }}
+              <div>
+                <p class="mb-1 text-sm font-semibold text-text-dark dark:text-darkmode-text-dark">
+                  {{ $labels.approach | default "Approach" }}
+                </p>
+                <p class="mb-0 text-text-light dark:text-darkmode-text-light">{{ . }}</p>
+              </div>
+            {{ end }}
+            {{ with .result }}
+              <div>
+                <p class="mb-1 text-sm font-semibold text-text-dark dark:text-darkmode-text-dark">
+                  {{ $labels.result | default "Result" }}
+                </p>
+                <p class="mb-0 text-text-light dark:text-darkmode-text-light">{{ . }}</p>
+              </div>
+            {{ end }}
+          </div>
+          {{ with .stack }}
+            <p class="mb-6 text-sm text-text-light dark:text-darkmode-text-light">{{ . }}</p>
+          {{ end }}
+          <div class="flex flex-wrap gap-3">
+            {{ with .link }}
+              <a
+                class="btn btn-primary"
+                href="{{ . }}"
+                target="_blank"
+                rel="noopener">
+                {{ $.Params.featured_project.link_label | default "View project" }}
+                <i class="fa fa-external-link pl-2"></i>
+              </a>
+            {{ end }}
+            {{ with .secondary_link }}
+              <a class="btn btn-outline-primary" href="{{ . | relLangURL }}">
+                {{ $.Params.featured_project.secondary_label }}
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{/* Service offers */}}
       {{ with .Params.services }}
         <div class="mb-16">
           <h2 class="h4 mb-8">{{ $labels.services | default "Services" }}</h2>
           <div class="services-grid grid gap-6 md:grid-cols-2">
             {{ range . }}
-              <article class="services-card h-full rounded-lg bg-light p-6 dark:bg-darkmode-light">
-                <h3 class="h5 mb-3">{{ .title }}</h3>
+              <article class="services-card h-full rounded-lg border border-transparent bg-light p-6 dark:bg-darkmode-light dark:hover:border-darkmode-border hover:border-border">
+                {{ with .icon }}
+                  <div class="services-card-icon mb-4 text-primary dark:text-darkmode-primary">
+                    <i class="fa-solid fa-{{ . }} text-2xl" aria-hidden="true"></i>
+                  </div>
+                {{ end }}
+                <h3 class="h5 mb-2">{{ .title }}</h3>
+                {{ with .for }}
+                  <p class="mb-3 text-sm font-semibold text-text-dark dark:text-darkmode-text-dark">
+                    <span class="text-text-light dark:text-darkmode-text-light">{{ $labels.for | default "For" }}:</span>
+                    {{ . }}
+                  </p>
+                {{ end }}
                 <p class="mb-4 text-text-light dark:text-darkmode-text-light">
                   {{ .summary | markdownify }}
                 </p>
                 {{ with .bullets }}
+                  <p class="mb-2 text-xs font-semibold tracking-wide text-text-light uppercase dark:text-darkmode-text-light">
+                    {{ $labels.includes | default "What's included" }}
+                  </p>
                   <ul class="mb-0 space-y-2">
                     {{ range . }}
                       <li class="relative pl-6">
@@ -35,44 +143,49 @@
         </div>
       {{ end }}
 
-      {{ with .Params.featured_project }}
-        <div class="services-featured mb-16 rounded-xl border border-border p-6 md:p-10 dark:border-darkmode-border">
-          <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
-            {{ $labels.featured | default "Featured project" }}
-          </p>
-          <h2 class="h4 mb-2">{{ .title }}</h2>
-          <p class="mb-1 text-sm text-text-light dark:text-darkmode-text-light">
-            {{ .location }}{{ with .org }} · {{ . }}{{ end }}
-          </p>
-          {{ with .role }}
-            <p class="mb-4 font-semibold text-primary dark:text-darkmode-primary">{{ . }}</p>
-          {{ end }}
-          {{ with .description }}
-            <p class="mb-4 leading-relaxed">{{ . | markdownify }}</p>
-          {{ end }}
-          {{ with .stack }}
-            <p class="mb-6 text-sm text-text-light dark:text-darkmode-text-light">{{ . }}</p>
-          {{ end }}
-          {{ with .link }}
-            <a
-              class="btn btn-outline-primary"
-              href="{{ . }}"
-              target="_blank"
-              rel="noopener">
-              {{ $.Params.featured_project.link_label | default "View project" }}
-              <i class="fa fa-external-link pl-2"></i>
-            </a>
-          {{ end }}
+      {{/* Process */}}
+      {{ with .Params.process }}
+        <div class="services-process mb-16">
+          <h2 class="h4 mb-8">{{ $labels.process | default "How we work" }}</h2>
+          <ol class="services-process-list m-0 grid list-none gap-6 p-0 md:grid-cols-2 lg:grid-cols-4">
+            {{ range $i, $step := . }}
+              <li class="services-process-step relative">
+                <span class="mb-3 inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white dark:bg-darkmode-primary dark:text-text-dark">
+                  {{ add $i 1 }}
+                </span>
+                <h3 class="h6 mb-2">{{ .title }}</h3>
+                <p class="mb-0 text-sm text-text-light dark:text-darkmode-text-light">{{ .body }}</p>
+              </li>
+            {{ end }}
+          </ol>
         </div>
       {{ end }}
 
+      {{/* FAQ */}}
+      {{ with .Params.faq }}
+        <div class="services-faq mb-16 max-w-3xl">
+          <h2 class="h4 mb-8">{{ $labels.faq | default "FAQ" }}</h2>
+          <div class="space-y-4">
+            {{ range . }}
+              <details class="services-faq-item rounded-lg border border-border p-4 dark:border-darkmode-border">
+                <summary class="cursor-pointer font-semibold text-text-dark dark:text-darkmode-text-dark">
+                  {{ .q }}
+                </summary>
+                <p class="mb-0 mt-3 text-text-light dark:text-darkmode-text-light">{{ .a | markdownify }}</p>
+              </details>
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+
+      {{/* CTA */}}
       {{ with .Params.cta }}
         <div class="services-cta rounded-xl bg-light px-6 py-10 text-center dark:bg-darkmode-light md:px-10">
           <h2 class="h4 mb-3">{{ $labels.cta_title | default "Get in touch" }}</h2>
           {{ with $labels.cta_body }}
             <p class="mb-6 mx-auto max-w-2xl">{{ . | markdownify }}</p>
           {{ end }}
-          <a class="btn btn-primary" href="{{ .link | absURL }}">
+          <a class="btn btn-primary" href="{{ .link | relLangURL }}">
             {{ .label }}
             <i class="fa fa-arrow-right pl-2"></i>
           </a>

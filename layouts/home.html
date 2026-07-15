@@ -1,28 +1,61 @@
 {{ define "main" }}
   <!-- Banner -->
   {{ with .Params.banner }}
-    <section class="section pt-14">
+    <section class="section pt-14 home-hero">
       <div class="container">
         <div class="row justify-center">
           <div class="lg:col-7 md:col-9 mb-8 text-center">
+            {{ with .kicker }}
+              <p class="home-hero-kicker mb-3 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
+                {{ . }}
+              </p>
+            {{ end }}
             <h1 class="mb-4 text-h3 lg:text-h1">
               {{ .title | markdownify }}
             </h1>
-            <p class="mb-8">
+            <p class="mb-3 text-lg leading-relaxed md:text-xl">
               {{ .content | markdownify }}
             </p>
-            {{ with .button }}
-              {{ if .enable }}
-                <a
-                  class="btn btn-primary"
-                  href="{{ if strings.HasPrefix .link `http` }}{{ .link }}{{ else }}{{ .link | relLangURL }}{{ end }}"
-                  {{ if strings.HasPrefix .link `http` }}
-                    target="_blank" rel="noopener"
-                  {{ end }}>
-                  {{ .label }}
-                </a>
-              {{ end }}
+            {{ with .support }}
+              <p class="mb-6 text-text-light dark:text-darkmode-text-light">
+                {{ . | markdownify }}
+              </p>
             {{ end }}
+            {{ with .proof }}
+              <ul class="home-proof mb-8 flex list-none flex-wrap items-center justify-center gap-2 p-0">
+                {{ range . }}
+                  <li class="home-proof-chip rounded-md border border-border px-3 py-1.5 text-sm dark:border-darkmode-border">
+                    {{ . }}
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            <div class="home-hero-ctas flex flex-wrap items-center justify-center gap-3">
+              {{ with .button }}
+                {{ if .enable }}
+                  <a
+                    class="btn btn-primary"
+                    href="{{ if strings.HasPrefix .link `http` }}{{ .link }}{{ else }}{{ .link | relLangURL }}{{ end }}"
+                    {{ if strings.HasPrefix .link `http` }}
+                      target="_blank" rel="noopener"
+                    {{ end }}>
+                    {{ .label }}
+                  </a>
+                {{ end }}
+              {{ end }}
+              {{ with .button_secondary }}
+                {{ if .enable }}
+                  <a
+                    class="btn btn-outline-primary"
+                    href="{{ if strings.HasPrefix .link `http` }}{{ .link }}{{ else }}{{ .link | relLangURL }}{{ end }}"
+                    {{ if strings.HasPrefix .link `http` }}
+                      target="_blank" rel="noopener"
+                    {{ end }}>
+                    {{ .label }}
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
           </div>
           <div class="col-12">
             {{ $bannerTitle := .title }}
@@ -41,6 +74,60 @@
     </section>
   {{ end }}
   <!-- /Banner -->
+
+  <!-- Featured work -->
+  {{ with .Params.featured_work }}
+    {{ if .enable }}
+      <section class="section-sm">
+        <div class="container">
+          <div class="home-featured rounded-xl border border-border p-6 dark:border-darkmode-border md:p-10">
+            <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
+              {{ .label }}
+            </p>
+            <h2 class="h4 mb-6">{{ .title }}</h2>
+            <div class="mb-8 grid gap-4 md:grid-cols-3">
+              <div>
+                <p class="mb-1 text-sm font-semibold text-text-dark dark:text-darkmode-text-dark">
+                  {{ .problem_label | default "Problem" }}
+                </p>
+                <p class="mb-0 text-text-light dark:text-darkmode-text-light">{{ .problem }}</p>
+              </div>
+              <div>
+                <p class="mb-1 text-sm font-semibold text-text-dark dark:text-darkmode-text-dark">
+                  {{ .approach_label | default "Approach" }}
+                </p>
+                <p class="mb-0 text-text-light dark:text-darkmode-text-light">{{ .approach }}</p>
+              </div>
+              <div>
+                <p class="mb-1 text-sm font-semibold text-text-dark dark:text-darkmode-text-dark">
+                  {{ .result_label | default "Result" }}
+                </p>
+                <p class="mb-0 text-text-light dark:text-darkmode-text-light">{{ .result }}</p>
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-3">
+              {{ with .link }}
+                <a
+                  class="btn btn-primary"
+                  href="{{ . }}"
+                  target="_blank"
+                  rel="noopener">
+                  {{ $.Params.featured_work.link_label }}
+                  <i class="fa fa-external-link pl-2"></i>
+                </a>
+              {{ end }}
+              {{ with .secondary_link }}
+                <a class="btn btn-outline-primary" href="{{ . | relLangURL }}">
+                  {{ $.Params.featured_work.secondary_label }}
+                </a>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+  {{ end }}
+  <!-- /Featured work -->
 
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
