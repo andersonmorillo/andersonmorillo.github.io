@@ -1,0 +1,96 @@
+<meta charset="utf-8" />
+
+<!-- responsive meta -->
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+<!-- Prevent mobile auto-dark from fighting the site theme -->
+<meta name="color-scheme" content="light dark" />
+{{ if site.Params.theme_switcher }}
+  <script>
+    (function () {
+      var darkMode = localStorage.getItem("theme") === "dark";
+      if (localStorage.getItem("theme") === null) {
+        darkMode = {{ if eq site.Params.theme_default "dark" }}true{{ else }}false{{ end }};
+        {{ if eq site.Params.theme_default "system" }}
+        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          darkMode = true;
+        }
+        {{ end }}
+      }
+      var root = document.documentElement;
+      if (darkMode) {
+        root.classList.add("dark");
+      } else {
+        root.classList.remove("dark");
+      }
+      root.style.colorScheme = darkMode ? "dark" : "light";
+    })();
+  </script>
+{{ end }}
+
+<!-- theme meta -->
+<meta name="theme-name" content="hugoplate" />
+
+<!-- favicon -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/images */}}
+{{ partialCached "favicon" . }}
+
+
+<!-- manifest -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/pwa */}}
+{{ partialCached "manifest" . }}
+
+
+<!-- site verifications -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications */}}
+{{ partialCached "site-verifications.html" . }}
+
+
+<!-- opengraph and twitter card -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo */}}
+{{ partial "basic-seo.html" . }}
+
+
+<!-- custom script -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/custom-script */}}
+{{ partialCached "custom-script.html" . }}
+
+
+<!-- google analytics -->
+{{/* https://gohugo.io/templates/embedded/#configuration-google-analytics */}}
+{{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
+  {{ partial "google_analytics.html" . }}
+{{ end }}
+
+
+<!-- google tag manager -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/google-tag-manager */}}
+{{ partialCached "gtm.html" . }}
+
+
+<!-- search index -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/search */}}
+{{ partial "search-index.html" . }}
+
+
+<!-- matomo analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/matomo-analytics */}}
+{{/* {{ partialCached "matomo-analytics.html" . }} */}}
+
+<!--  Baidu analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/baidu-analytics */}}
+{{/* {{ partialCached "baidu-analytics.html" . }} */}}
+
+<!-- Plausible Analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/plausible-analytics */}}
+{{/* {{ partialCached "plausible-analytics.html" . }} */}}
+
+<!-- Counter Analytics -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/counter-analytics */}}
+{{/* {{ partialCached "counter-analytics.html" . }} */}}
+
+<!-- Crisp Chat -->
+{{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/crisp-chat */}}
+{{/* {{ partialCached "crisp-chat.html" . }} */}}

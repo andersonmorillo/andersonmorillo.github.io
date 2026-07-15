@@ -12,26 +12,24 @@
       {{ with .Params.services }}
         <div class="mb-16">
           <h2 class="h4 mb-8">{{ $labels.services | default "Services" }}</h2>
-          <div class="row gy-6">
+          <div class="services-grid grid gap-6 md:grid-cols-2">
             {{ range . }}
-              <div class="md:col-6">
-                <article class="services-card h-full rounded-lg bg-light p-6 dark:bg-darkmode-light">
-                  <h3 class="h5 mb-3">{{ .title }}</h3>
-                  <p class="mb-4 text-text-light dark:text-darkmode-text-light">
-                    {{ .summary | markdownify }}
-                  </p>
-                  {{ with .bullets }}
-                    <ul class="mb-0 space-y-2">
-                      {{ range . }}
-                        <li class="relative pl-6">
-                          <i class="fa fa-check absolute left-0 top-1.5"></i>
-                          {{ . | markdownify }}
-                        </li>
-                      {{ end }}
-                    </ul>
-                  {{ end }}
-                </article>
-              </div>
+              <article class="services-card h-full rounded-lg bg-light p-6 dark:bg-darkmode-light">
+                <h3 class="h5 mb-3">{{ .title }}</h3>
+                <p class="mb-4 text-text-light dark:text-darkmode-text-light">
+                  {{ .summary | markdownify }}
+                </p>
+                {{ with .bullets }}
+                  <ul class="mb-0 space-y-2">
+                    {{ range . }}
+                      <li class="relative pl-6">
+                        <i class="fa fa-check absolute left-0 top-1.5"></i>
+                        {{ . | markdownify }}
+                      </li>
+                    {{ end }}
+                  </ul>
+                {{ end }}
+              </article>
             {{ end }}
           </div>
         </div>
@@ -39,7 +37,7 @@
 
       {{ with .Params.featured_project }}
         <div class="services-featured mb-16 rounded-xl border border-border p-6 md:p-10 dark:border-darkmode-border">
-          <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase">
+          <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
             {{ $labels.featured | default "Featured project" }}
           </p>
           <h2 class="h4 mb-2">{{ .title }}</h2>
@@ -47,7 +45,7 @@
             {{ .location }}{{ with .org }} · {{ . }}{{ end }}
           </p>
           {{ with .role }}
-            <p class="mb-4 font-semibold text-primary">{{ . }}</p>
+            <p class="mb-4 font-semibold text-primary dark:text-darkmode-primary">{{ . }}</p>
           {{ end }}
           {{ with .description }}
             <p class="mb-4 leading-relaxed">{{ . | markdownify }}</p>
