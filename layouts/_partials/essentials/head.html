@@ -11,12 +11,17 @@
     (function () {
       var darkMode = localStorage.getItem("theme") === "dark";
       if (localStorage.getItem("theme") === null) {
-        darkMode = {{ if eq site.Params.theme_default "dark" }}true{{ else }}false{{ end }};
-        {{ if eq site.Params.theme_default "system" }}
-        if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        // Mobile (< lg / 1024px): default dark; do not write localStorage
+        if (window.matchMedia("(max-width: 1023px)").matches) {
           darkMode = true;
+        } else {
+          darkMode = {{ if eq site.Params.theme_default "dark" }}true{{ else }}false{{ end }};
+          {{ if eq site.Params.theme_default "system" }}
+          if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+            darkMode = true;
+          }
+          {{ end }}
         }
-        {{ end }}
       }
       var root = document.documentElement;
       if (darkMode) {
