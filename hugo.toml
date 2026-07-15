@@ -2,7 +2,7 @@
 # The base URL of your site (required). This will be prepended to all relative URLs.
 baseURL = "https://andersonmorillo.github.io/"
 # Title of your website (required).
-title = "Anderson's code"
+title = "Anderson Morillo"
 # Your theme name
 theme = "hugoplate"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -21,6 +21,7 @@ defaultContentLanguageInSubdir = false
 ########################### Services #############################
 [services]
 [services.googleAnalytics]
+# Paste GA4 Measurement ID when ready (e.g. G-XXXXXXXXXX), then rebuild/redeploy.
 # ID = 'G-XXXXXXXXXX' # see https://gohugo.io/templates/internal/#configure-google-analytics
 
 ########################## Permalinks ############################

@@ -6,6 +6,7 @@ categories: ["Research"]
 venue_short: "SemEval-2024"
 author: "Anderson Morillo"
 tags: ["Natural Language Processing", "Semantic Textual Relatedness", "Deep Learning", "LSTM", "Multilingual NLP"]
+image: "/images/og-image.png"
 draft: false
 ---
 

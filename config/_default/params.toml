@@ -84,11 +84,20 @@ image = "images/og-image.png"
 # site verifications
 # verification module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/site-verifications
 [site_verification]
+# Paste your Google Search Console HTML-tag content value (e.g. abc123...)
 google = ""   # Your verification code
+# Paste Microsoft Bing Webmaster verification code
 bing = ""     # Your verification code
 baidu = ""    # Your verification code
 facebook = "" # Your verification code
 mastodon = "" # Your verification code
+
+# Measurement checklist (after deploy):
+# 1. Add google verification code above; redeploy
+# 2. Search Console → Property → Sitemaps → submit https://andersonmorillo.github.io/sitemap.xml
+# 3. Uncomment and set [services.googleAnalytics] ID in hugo.toml (G-XXXXXXXXXX)
+#    or set google_tag_manager above
+# google_tag_manager already defined earlier in this file — set it when ready
 
 # cookies
 # cookies module: https://github.com/gethugothemes/hugo-modules/tree/master/components/cookie-consent

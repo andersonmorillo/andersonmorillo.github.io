@@ -7,6 +7,8 @@ categories: ["NLP"]
 author: "Anderson Morillo"
 tags: ["Python", "NLP", "Corpus", "Google Ngram"]
 draft: false
+aliases:
+  - /blog/unigram-frecuency-corpus/
 ---
 
 Interested in linguistic corpora and natural language processing? This post describes how to build your own English word-frequency (unigram) corpus using the [Create_google_unigram_frecuency_corpus](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus) project.

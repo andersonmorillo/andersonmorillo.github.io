@@ -7,6 +7,8 @@ categories: ["NLP"]
 author: "Anderson Morillo"
 tags: ["Python", "NLP", "Corpus", "Google Ngram"]
 draft: false
+aliases:
+  - /es/blog/unigram-frecuency-corpus/
 ---
 
 ¿Te interesan los corpus lingüísticos y el procesamiento de lenguaje natural? Este post describe cómo crear tu propio corpus de frecuencia de palabras (unigrama) en inglés utilizando el proyecto [Create_google_unigram_frecuency_corpus](https://github.com/andersonmorillo/Create_google_unigram_frecuency_corpus).

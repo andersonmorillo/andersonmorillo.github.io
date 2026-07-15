@@ -52,6 +52,13 @@
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo */}}
 {{ partial "basic-seo.html" . }}
 
+{{/* Default canonical when frontmatter does not set one (basic-seo only emits when set) */}}
+{{ if not .Params.canonical }}
+  <link rel="canonical" href="{{ .Permalink }}" />
+{{ end }}
+
+{{ partial "seo/jsonld.html" . }}
+
 
 <!-- custom script -->
 {{/* https://github.com/gethugothemes/hugo-modules/tree/master/components/custom-script */}}

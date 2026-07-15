@@ -22,7 +22,7 @@ content/english/blog/
 ├── _index.md
 ├── model-context-protocol.md
 ├── extract-important-words-weirdness.md
-├── unigram-frecuency-corpus.md
+├── unigram-frequency-corpus.md
 └── guides.md
 ```
 

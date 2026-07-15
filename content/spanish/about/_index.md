@@ -1,6 +1,6 @@
 ---
 title: "Anderson Morillo"
-meta_title: "Sobre mí"
+meta_title: "Sobre Anderson Morillo — Ingeniero de IA e investigador en NLP"
 description: "Ingeniero de IA e investigador en NLP en Cartagena, Colombia — sistemas RAG, transformers e IA en producción en COTECMAR y la Universidad Tecnológica de Bolívar."
 image: "/images/avatar.png"
 layout: "about"

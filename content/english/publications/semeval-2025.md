@@ -6,6 +6,7 @@ categories: ["Research"]
 venue_short: "SemEval-2025"
 author: "Anderson Morillo"
 tags: ["Natural Language Processing", "Large Language Models", "Hallucination Detection", "RAG", "Google Snippets"]
+image: "/images/og-image.png"
 draft: false
 ---
 

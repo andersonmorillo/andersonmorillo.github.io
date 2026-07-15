@@ -6,6 +6,7 @@ categories: ["Research"]
 venue_short: "IEEE C3 2025"
 author: "Anderson Morillo"
 tags: ["Biomedical Question Answering", "Information Retrieval", "Large Language Models", "PubMed API", "Hybrid Retrieval", "RAG"]
+image: "/images/og-image.png"
 draft: false
 ---
 
