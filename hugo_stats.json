@@ -204,6 +204,7 @@
       "lg:flex",
       "lg:hidden",
       "lg:inline-block",
+      "lg:inline-flex",
       "lg:justify-end",
       "lg:mb-0",
       "lg:ml-0",

@@ -8,6 +8,16 @@ html.dark {
   color-scheme: dark;
 }
 
+/* Theme toggle: desktop only (phones still follow system / saved theme) */
+.theme-switcher {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .theme-switcher {
+    display: inline-flex;
+  }
+}
+
 /* Keep the logo small enough on phones so the navbar does not wrap */
 .navbar-brand img {
   max-width: 7.5rem;
