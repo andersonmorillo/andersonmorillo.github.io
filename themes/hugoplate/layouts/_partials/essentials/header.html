@@ -9,23 +9,8 @@
         {{ partial "logo" }}
       </a>
     </div>
-    <!-- navbar toggler -->
+    <!-- navbar toggler (rendered inside the right-side group below) -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      for="nav-toggle"
-      class="order-3 cursor-pointer flex items-center lg:hidden text-text-dark dark:text-white lg:order-1">
-      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
-        <title>{{ T "menu-open" | default "Menu Open" }}</title>
-        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
-      </svg>
-      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
-        <title>{{ T "menu-close" | default "Menu Close" }}</title>
-        <polygon
-          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"></polygon>
-      </svg>
-    </label>
-    <!-- /navbar toggler -->
 
     <!-- main navbar -->
     <ul
@@ -121,7 +106,7 @@
           <button
             aria-label="search"
             class="border-border text-text-dark hover:text-primary
-            dark:border-darkmode-border mr-5 inline-block border-r pr-5
+            dark:border-darkmode-border mr-3 sm:mr-4 lg:mr-5 inline-block border-r pr-3 sm:pr-4 lg:pr-5
             text-xl dark:text-white cursor-pointer dark:hover:text-darkmode-primary
             {{ if not (or site.Params.navigation_button.enable site.Params.theme_switcher) }}
               lg:border-r-0 lg:pr-0
@@ -132,8 +117,24 @@
         {{ end }}
       {{ end }}
 
-      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-5 pl-2 py-1 dark:bg-darkmode-light rounded") }}
-      {{ partial "components/theme-switcher" (dict "Class" "mr-5") }}
+      {{ partial "components/language-switcher" (dict "Context" . "Class" "mr-3 sm:mr-4 lg:mr-5 pl-2 py-1 dark:bg-darkmode-light rounded") }}
+      {{ partial "components/theme-switcher" (dict "Class" "mr-3 sm:mr-4 lg:mr-5") }}
+
+      <!-- navbar toggler (kept inline with the right-side icons to avoid wrapping on mobile) -->
+      <label
+        for="nav-toggle"
+        class="cursor-pointer flex items-center lg:hidden text-text-dark dark:text-white">
+        <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+          <title>{{ T "menu-open" | default "Menu Open" }}</title>
+          <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+        </svg>
+        <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+          <title>{{ T "menu-close" | default "Menu Close" }}</title>
+          <polygon
+            points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+            transform="rotate(45 10 10)"></polygon>
+        </svg>
+      </label>
 
 
       <!-- navigation btn -->

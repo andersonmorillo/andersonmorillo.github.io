@@ -8,34 +8,19 @@ html.dark {
   color-scheme: dark;
 }
 
-/* Mobile header: one row for logo + actions; menu opens full-width below */
-.header {
-  @apply bg-body/95 backdrop-blur-sm dark:bg-darkmode-body/95;
+/* Keep the logo small enough on phones so the navbar does not wrap */
+.navbar-brand img {
+  max-width: 7.5rem;
 }
-
-.header .navbar {
-  @apply flex-wrap;
+@media (min-width: 480px) {
+  .navbar-brand img {
+    max-width: 9rem;
+  }
 }
-
-.header .navbar-brand img {
-  @apply max-h-8 w-auto max-w-[9.5rem] sm:max-h-none sm:max-w-none;
-}
-
-.header .navbar-actions {
-  @apply gap-0;
-}
-
-/* Toggler lives inside .navbar-actions (not adjacent sibling of input) */
-input#nav-toggle:checked ~ .navbar-actions #show-button {
-  @apply hidden;
-}
-
-input#nav-toggle:checked ~ .navbar-actions #hide-button {
-  @apply block;
-}
-
-input#nav-toggle:checked ~ #nav-menu {
-  @apply block;
+@media (min-width: 1024px) {
+  .navbar-brand img {
+    max-width: 12.5rem;
+  }
 }
 
 /* About page */

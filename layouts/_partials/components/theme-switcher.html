@@ -46,7 +46,10 @@
           document.documentElement.classList.toggle("dark");
           var isDark = document.documentElement.classList.contains("dark");
           localStorage.setItem("theme", isDark ? "dark" : "light");
-          document.documentElement.style.colorScheme = isDark ? "dark" : "light";
+          var root = document.documentElement;
+          root.style.colorScheme = isDark ? "dark" : "light";
+          root.style.backgroundColor = isDark ? "#1c1c1c" : "#ffffff";
+          root.style.color = isDark ? "#E4E2E6" : "#444444";
         });
       });
 
