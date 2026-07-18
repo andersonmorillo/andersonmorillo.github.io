@@ -3,13 +3,14 @@
     <div class="container">
       <div class="row justify-center">
         <article class="lg:col-10">
-          <!-- Article header -->
-          <header class="blog-header mb-10">
-            <div class="mb-6">
-              <a href="{{ `/blog` | relLangURL }}" class="blog-back-link">
-                ← {{ T "back_to_blog" | default "Back to blog" }}
-              </a>
-            </div>
+          <div class="blog-prose">
+            <!-- Article header -->
+            <header class="blog-header mb-10">
+              <div class="mb-6">
+                <a href="{{ `/blog` | relLangURL }}" class="blog-back-link">
+                  ← {{ T "back_to_blog" | default "Back to blog" }}
+                </a>
+              </div>
 
             {{ $categories:= .Params.categories }}
             {{ if $categories }}
@@ -24,78 +25,95 @@
               </div>
             {{ end }}
 
+            {{ if in .Params.tags "daily-automated-blog" }}
+              <div class="blog-automated-badge">
+                {{ T "daily_automated_blog" | default "Daily automated blog" }}
+              </div>
+            {{ end }}
+
             <h1 class="blog-title">
               {{ .Title }}
             </h1>
 
-            <div class="blog-meta">
-              <div class="blog-meta-item">
-                <i class="fa-regular fa-circle-user"></i>
-                <a
-                  href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
-                  {{ .Params.author }}
-                </a>
-              </div>
-              <span class="blog-meta-separator">·</span>
-              <div class="blog-meta-item">
-                <i class="fa-regular fa-clock"></i>
-                {{ time.Format ":date_long" .PublishDate }}
-              </div>
-              <span class="blog-meta-separator">·</span>
-              <div class="blog-meta-item">
-                <i class="fa-regular fa-hourglass"></i>
-                {{ .ReadingTime }} {{ T "min_read" | default "min read" }}
-              </div>
-            </div>
-          </header>
+            {{ with .Params.subtitle }}
+              <p class="blog-subtitle">{{ . }}</p>
+            {{ end }}
 
-          {{ $image:= .Params.image }}
+              <div class="blog-meta">
+                <div class="blog-meta-item">
+                  <i class="fa-regular fa-circle-user"></i>
+                  <a
+                    href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
+                    {{ .Params.author }}
+                  </a>
+                </div>
+                <span class="blog-meta-separator">·</span>
+                <div class="blog-meta-item">
+                  <i class="fa-regular fa-clock"></i>
+                  {{ time.Format ":date_long" .PublishDate }}
+                </div>
+                <span class="blog-meta-separator">·</span>
+                <div class="blog-meta-item">
+                  <i class="fa-regular fa-hourglass"></i>
+                  {{ .ReadingTime }} {{ T "min_read" | default "min read" }}
+                </div>
+              </div>
+            </header>
+
+          {{ $image := .Params.image | default "/images/genvid-daily-cover.png" }}
+          {{ $hasCustomImage := .Params.image }}
           {{ if $image }}
-            <div class="mb-10">
+            <div class="blog-image-wrapper mb-10">
               {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "blog-hero-image") }}
+              {{ if not $hasCustomImage }}
+                <div class="blog-image-overlay">
+                  <span class="blog-image-label">Daily blog</span>
+                </div>
+              {{ end }}
             </div>
           {{ end }}
 
-          <div class="blog-toc-card">
-            <h3 class="blog-toc-title">
-              {{ T "table_of_contents" | default "Table of Contents" }}
-            </h3>
-            {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
-          </div>
+            <div class="blog-toc-card">
+              <h3 class="blog-toc-title">
+                {{ T "table_of_contents" | default "Table of Contents" }}
+              </h3>
+              {{ partial "toc.html" (dict "Class" "blog" "Collapsed" false "TableOfContents" .TableOfContents ) }}
+            </div>
 
-          <div class="content mb-10">
-            {{ .Content }}
-          </div>
+            <div class="content mb-10">
+              {{ .Content }}
+            </div>
 
-          <div class="blog-footer row items-start justify-between">
-            {{ $tags:= .Params.tags }}
-            {{ if $tags }}
-              <div class="lg:col-6 mb-10 flex flex-wrap items-center lg:mb-0">
-                <h5 class="mr-3">{{ T "tags" | default "Tags" }}:</h5>
-                <ul class="flex flex-wrap">
-                  {{ range $i,$p:= $tags }}
-                    <li class="inline-block">
-                      <a
-                        class="blog-tag"
-                        href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
-                        {{ . | humanize }}
-                      </a>
-                    </li>
-                  {{ end }}
-                </ul>
+            <div class="blog-footer row items-start justify-between">
+              {{ $tags:= .Params.tags }}
+              {{ if $tags }}
+                <div class="lg:col-6 mb-10 flex flex-wrap items-center lg:mb-0">
+                  <h5 class="mr-3">{{ T "tags" | default "Tags" }}:</h5>
+                  <ul class="flex flex-wrap">
+                    {{ range $i,$p:= $tags }}
+                      <li class="inline-block">
+                        <a
+                          class="blog-tag"
+                          href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}/">
+                          {{ . | humanize }}
+                        </a>
+                      </li>
+                    {{ end }}
+                  </ul>
+                </div>
+              {{ end }}
+              <div class="lg:col-6 flex items-center lg:justify-end">
+                <h5 class="mr-3">{{ T "share" | default "Share" }}:</h5>
+                {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
+              </div>
+            </div>
+
+            {{ if site.Params.open_remark.enable }}
+              <div class="mt-20">
+                {{ partial "open-remark.html" . }}
               </div>
             {{ end }}
-            <div class="lg:col-6 flex items-center lg:justify-end">
-              <h5 class="mr-3">{{ T "share" | default "Share" }}:</h5>
-              {{ partial "social-share" (dict "Context" . "Class" "share-icons" "Title" .Title "Whatsapp" false "Telegram" false "Linkedin" false "Pinterest" false "Tumblr" false "Vk" false "Reddit" false) }}
-            </div>
           </div>
-
-          {{ if site.Params.open_remark.enable }}
-            <div class="mt-20">
-              {{ partial "open-remark.html" . }}
-            </div>
-          {{ end }}
         </article>
       </div>
 

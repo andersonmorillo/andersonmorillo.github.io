@@ -1,7 +1,9 @@
 ---
 title: "Más palabras, menos pensamiento: la homogeneización paradójica de la escritura asistida por IA"
+subtitle: "La IA hace la escritura más elocuente — y menos original."
 meta_title: "Más palabras, menos pensamiento: la homogeneización paradójica de la escritura asistida por IA"
 description: "Un estudio de Georgetown con 373.000 ensayos de admisión universitaria muestra que la IA hace la escritura más elocuente pero menos original."
+image: "/images/genvid-daily-cover.png"
 date: 2026-07-18T19:00:00Z
 categories: ["AI", "NLP"]
 author: "Anderson Morillo"

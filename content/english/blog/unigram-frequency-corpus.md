@@ -5,7 +5,7 @@ date: 2025-06-06T00:00:00Z
 image: "/images/code.jpg"
 categories: ["NLP"]
 author: "Anderson Morillo"
-tags: ["Python", "NLP", "Corpus", "Google Ngram"]
+tags: ["Python", "NLP", "Corpus", "Google Ngram", "daily-automated-blog"]
 draft: false
 aliases:
   - /blog/unigram-frecuency-corpus/

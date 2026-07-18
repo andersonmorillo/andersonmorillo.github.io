@@ -5,7 +5,7 @@ date: 2025-06-23T00:00:00Z
 image: "/images/mcp.png"
 categories: ["AI", "NLP"]
 author: "Anderson Morillo"
-tags: ["MCP", "Model Context Protocol", "Fast Agent", "AI Agents"]
+tags: ["MCP", "Model Context Protocol", "Fast Agent", "AI Agents", "daily-automated-blog"]
 draft: false
 ---
 

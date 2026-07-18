@@ -266,10 +266,6 @@ html.dark .services-proof-chip {
 }
 
 /* Blog single page */
-.blog-header {
-  animation: about-fade-up 0.55s ease both;
-}
-
 .blog-back-link {
   display: inline-flex;
   align-items: center;
@@ -344,6 +340,23 @@ html.dark .blog-title {
   color: var(--color-darkmode-text-dark);
 }
 
+.blog-title:has(+ .blog-subtitle) {
+  margin-bottom: 0.75rem;
+}
+
+.blog-subtitle {
+  font-size: 1.25rem;
+  line-height: 1.45;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--color-text-light);
+  margin: 0 0 1.5rem;
+}
+
+html.dark .blog-subtitle {
+  color: var(--color-darkmode-text-light);
+}
+
 .blog-meta {
   display: flex;
   flex-wrap: wrap;
@@ -400,26 +413,27 @@ html.dark .blog-hero-image {
 
 .blog-toc-card {
   margin-bottom: 2.5rem;
-  padding: 1.5rem;
-  border-radius: 1rem;
+  padding: 1.1rem 1.4rem;
+  border-radius: 0.75rem;
   border: 1px solid var(--color-border);
-  background-color: var(--color-light);
+  background-color: transparent;
 }
 
 html.dark .blog-toc-card {
   border-color: var(--color-darkmode-border);
-  background-color: var(--color-darkmode-light);
 }
 
 .blog-toc-title {
-  font-size: var(--text-h5);
+  font-size: var(--text-base-sm);
   font-weight: 600;
-  color: var(--color-text-dark);
-  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-light);
+  margin-bottom: 0.75rem;
 }
 
 html.dark .blog-toc-title {
-  color: var(--color-darkmode-text-dark);
+  color: var(--color-darkmode-text-light);
 }
 
 .blog-toc-card ul {
@@ -484,4 +498,224 @@ html.dark .blog-tag {
 html.dark .blog-tag:hover {
   background-color: var(--color-darkmode-primary);
   color: var(--color-darkmode-body);
+}
+
+.blog-automated-badge {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding: 0.35rem 0.9rem;
+  font-size: var(--text-base-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 9999px;
+  background-color: var(--color-primary);
+  color: var(--color-body);
+}
+
+html.dark .blog-automated-badge {
+  background-color: var(--color-darkmode-primary);
+  color: var(--color-darkmode-body);
+}
+
+.blog-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.blog-image-wrapper .blog-hero-image {
+  margin: 0;
+}
+
+.blog-image-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.45) 0%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
+}
+
+.blog-image-label {
+  padding: 0.75rem 1.5rem;
+  font-size: var(--text-h3);
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+}
+
+@media (max-width: 768px) {
+  .blog-image-label {
+    font-size: var(--text-h3-sm);
+  }
+}
+
+/* Blog reading column: keep the whole article stream inside a comfortable
+   ~65ch measure instead of stretching across the wide grid column */
+.blog-prose {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  animation: about-fade-up 0.55s ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .blog-prose {
+    animation: none;
+  }
+}
+
+/* Blog body typography: larger, calmer type with more breathing room.
+   Scoped to .blog-prose so other pages using .content are untouched. */
+.blog-prose .content {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+@media (min-width: 768px) {
+  .blog-prose .content {
+    font-size: 1.125rem;
+    line-height: 1.7;
+  }
+}
+
+.blog-prose .content > :first-child {
+  margin-top: 0;
+}
+
+.blog-prose .content p {
+  margin-bottom: 1.5em;
+}
+
+.blog-prose .content > p:first-of-type {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: var(--color-text-dark);
+}
+
+html.dark .blog-prose .content > p:first-of-type {
+  color: var(--color-darkmode-text-dark);
+}
+
+.blog-prose .content h2,
+.blog-prose .content h3,
+.blog-prose .content h4 {
+  margin-top: 2.5em;
+  margin-bottom: 0.75em;
+}
+
+.blog-prose .content ul,
+.blog-prose .content ol {
+  margin-top: 1.25em;
+  margin-bottom: 1.5em;
+}
+
+.blog-prose .content li {
+  margin-bottom: 0.5em;
+}
+
+.blog-prose .content li::marker {
+  color: var(--color-text-light);
+}
+
+html.dark .blog-prose .content li::marker {
+  color: var(--color-darkmode-text-light);
+}
+
+.blog-prose .content a:not(.btn) {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-border);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.blog-prose .content a:not(.btn):hover {
+  text-decoration-color: var(--color-primary);
+}
+
+html.dark .blog-prose .content a:not(.btn) {
+  color: var(--color-darkmode-primary);
+  text-decoration-color: var(--color-darkmode-border);
+}
+
+html.dark .blog-prose .content a:not(.btn):hover {
+  text-decoration-color: var(--color-darkmode-primary);
+}
+
+.blog-prose .content :not(pre) > code {
+  background-color: var(--color-light);
+  padding: 0.15em 0.4em;
+  border-radius: 0.3em;
+  font-size: 0.9em;
+}
+
+html.dark .blog-prose .content :not(pre) > code {
+  background-color: var(--color-darkmode-light);
+}
+
+.blog-prose .content pre {
+  margin-top: 1.5em;
+  margin-bottom: 1.75em;
+}
+
+.blog-prose .content blockquote {
+  border-left-width: 3px;
+  border-color: var(--color-primary);
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0.25em 0 0.25em 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-style: italic;
+  font-size: 1.15em;
+  color: var(--color-text-dark);
+}
+
+.blog-prose .content blockquote p {
+  margin-bottom: 0;
+}
+
+html.dark .blog-prose .content blockquote {
+  border-color: var(--color-darkmode-primary);
+  color: var(--color-darkmode-text-light);
+}
+
+.blog-prose .content .blog-figure {
+  margin: 2.75rem 0;
+}
+
+.blog-prose .content .blog-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+html.dark .blog-prose .content .blog-figure img {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.blog-prose .content .blog-figure figcaption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+html.dark .blog-prose .content .blog-figure figcaption {
+  color: var(--color-darkmode-text-light);
 }

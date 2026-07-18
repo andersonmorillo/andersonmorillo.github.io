@@ -5,7 +5,7 @@ date: 2026-07-15T00:00:00Z
 image: "/images/nlp.png"
 categories: ["AI", "NLP"]
 author: "Anderson Morillo"
-tags: ["RAG", "Retrieval Augmented Generation", "LLM", "FastAPI", "Technical Documentation", "On-premise AI"]
+tags: ["RAG", "Retrieval Augmented Generation", "LLM", "FastAPI", "Technical Documentation", "On-premise AI", "daily-automated-blog"]
 draft: false
 ---
 
