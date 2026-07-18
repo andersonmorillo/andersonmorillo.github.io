@@ -15,13 +15,13 @@ AI makes writing more eloquent but less original. A Georgetown study of 373,000 
 
 ## The Georgetown Study: 373,000 Essays, Before and After ChatGPT
 
-Researchers at Georgetown University analyzed a massive corpus of college admissions essays — 373,000 in total — comparing submissions written before and after ChatGPT. The dataset was large enough to detect subtle shifts in both language and meaning, and the results were striking.
+Researchers at Georgetown University analyzed a massive corpus of college admissions essays — 373,000 in total — comparing submissions written before and after ChatGPT. The dataset was large enough to detect subtle shifts in both language and meaning. The pattern was clear: fluency went up, variety went down.
 
 Post-ChatGPT essays showed measurable gains in lexical sophistication. Words became more polished, sentences more fluid, and overall prose more confident. But underneath that surface improvement, the ideas themselves were becoming less diverse.
 
 ## The Paradox: Richer Vocabulary, Narrower Ideas
 
-This is the heart of paradoxical homogenization. Students now have a tool that can help them express themselves more fluently, yet the very fluency it produces tends to smooth away the rough edges that make an essay memorable.
+That is paradoxical homogenization in practice. Students now have a tool that can help them express themselves more fluently, yet the very fluency it produces tends to smooth away the rough edges that make an essay memorable.
 
 LLMs are trained to predict the most probable next token. Statistically, that means they gravitate toward common phrasings, safe examples, and familiar conclusions. When many students use the same assistant, the outputs naturally cluster around the same linguistic center of gravity. The result is writing that sounds better but thinks less broadly.
 
@@ -45,15 +45,15 @@ The danger is that readers — including teachers, admissions officers, and recr
 
 ## What This Means for Education and Assessment
 
-For educators, the implications are profound. Traditional writing assignments may become less reliable as measures of student learning if students can generate plausible prose with minimal effort. The assessment needs to shift toward process, reflection, and the kind of reasoning that cannot be outsourced.
+For educators, this changes what a writing assignment can measure. Traditional writing assignments may become less reliable as measures of student learning if students can generate plausible prose with minimal effort. The assessment needs to shift toward process, reflection, and the kind of reasoning that cannot be outsourced.
 
 One path forward is to value the *unlikely* idea: the observation that only emerges from a particular student’s experience, the argument that runs against the obvious consensus, the question that the model would not have thought to ask.
 
 ## Conclusion: The Value of Unlikely Ideas
 
-The Georgetown study is a reminder that better tools do not automatically produce better thinking. They can make us more articulate, but they can also make us more alike. The real challenge now is to preserve — and teach — the habits of mind that produce genuinely original thought.
+The Georgetown study does not claim that AI is making students worse. It shows that better tools can make us more articulate while making us more alike. The harder task is to preserve — and teach — the habits of mind that produce genuinely original thought.
 
-In a world of fluent AI prose, the scarcest and most valuable skill may be the willingness to pursue an idea that is not the most probable one.
+When fluent AI prose becomes the default, the scarcest and most valuable skill may be the willingness to pursue an idea that is not the most probable one.
 
 ## Source
 
