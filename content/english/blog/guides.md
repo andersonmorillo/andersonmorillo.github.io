@@ -5,7 +5,7 @@ date: 2025-06-06T00:00:00Z
 image: "/images/image-placeholder.png"
 categories: ["Guides"]
 author: "Anderson Morillo"
-tags: ["Hugo", "Markdown", "Guide"]
+tags: ["Hugo", "Markdown", "Guide", "daily-automated-blog"]
 draft: true
 ---
 

@@ -5,7 +5,7 @@ date: 2025-06-06T00:00:00Z
 image: "/images/nlp.png"
 categories: ["NLP"]
 author: "Anderson Morillo"
-tags: ["NLP", "text analysis", "Python"]
+tags: ["NLP", "text analysis", "Python", "daily-automated-blog"]
 draft: false
 ---
 

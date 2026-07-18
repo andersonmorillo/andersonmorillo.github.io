@@ -1,11 +1,13 @@
 ---
 title: "More Words, Less Thinking: The Paradoxical Homogenization of AI-Assisted Writing"
+subtitle: "AI makes writing more eloquent — and less original."
 meta_title: "More Words, Less Thinking: The Paradoxical Homogenization of AI-Assisted Writing"
 description: "A Georgetown study of 373,000 college admissions essays shows that AI makes writing more eloquent but less original."
+image: "/images/genvid-daily-cover.png"
 date: 2026-07-18T19:00:00Z
 categories: ["AI", "NLP"]
 author: "Anderson Morillo"
-tags: ["AI writing", "ChatGPT", "education", "originality"]
+tags: ["AI writing", "ChatGPT", "education", "originality", "daily-automated-blog"]
 draft: false
 ---
 
