@@ -100,3 +100,13 @@ npx kill-port 1313 -y && <pm> dev
 Before modifying or reading structure, styles, pages, config, content, or scripts, trigger the `template-guidance` skill for the relevant reference so you follow project conventions (modes, theme tokens, Hugo Modules, the theme generator, adding languages).
 
 <!-- END:template-guidance-rules -->
+
+## Cursor Cloud specific instructions
+
+The startup update script runs `pnpm install` + `mise trust` + `mise install`. Package manager is `pnpm` (`pnpm-lock.yaml`).
+
+- **Hugo runs through `mise`, not a bare binary.** `mise` is installed system-wide (`/usr/local/bin/mise`) and provides the pinned `hugo-extended` from `mise.toml` (0.158.0, extended). `scripts/run-hugo.js` invokes `mise exec -- hugo`, so `pnpm dev`/`build`/`preview` work, but a bare `hugo` is NOT on PATH — use `mise exec -- hugo ...` for ad-hoc Hugo commands.
+- **Already in project-setup mode** (root `hugo.toml` + `themes/hugoplate/`, no `exampleSite/`). Do not run `pnpm project-setup`; it no-ops here.
+- **First build fetches Go modules over the network.** Hugo Modules are declared in `config/_default/module.toml` (gethugothemes). The first `pnpm build`/`pnpm dev` on a fresh VM downloads them via Go into the module cache (`go env GOMODCACHE`), so it needs network access; later runs use the cache. `go.sum` is gitignored. The preinstalled Go (1.22.x) is sufficient.
+- **Dev/build:** `pnpm dev` serves at `http://localhost:1313/`; `pnpm build` outputs to `public/` (gitignored). `pnpm build` rewrites the tracked `hugo_stats.json` — revert it (`git checkout -- hugo_stats.json`) if you didn't intend to change it.
+- **Lint/format:** `npx prettier --check .` currently throws a parse error on a vendored theme Go-template file (`themes/hugoplate/layouts/...`); this is pre-existing and not caused by your changes.
