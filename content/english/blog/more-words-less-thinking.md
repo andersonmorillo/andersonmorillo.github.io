@@ -1,6 +1,7 @@
 ---
 title: "More Words, Less Thinking: The Paradoxical Homogenization of AI-Assisted Writing"
-description: "AI makes writing more eloquent but less original. A Georgetown study of 373,000 college admissions essays reveals why fluent prose is no longer proof of original thought."
+meta_title: "More Words, Less Thinking: The Paradoxical Homogenization of AI-Assisted Writing"
+description: "A Georgetown study of 373,000 college admissions essays shows that AI makes writing more eloquent but less original."
 date: 2026-07-18T19:00:00Z
 categories: ["AI", "NLP"]
 author: "Anderson Morillo"
@@ -8,15 +9,13 @@ tags: ["AI writing", "ChatGPT", "education", "originality"]
 draft: false
 ---
 
-# More Words, Less Thinking
-
-AI makes writing more eloquent but less original. A Georgetown study of 373,000 college admissions essays found that after ChatGPT, essays use richer vocabulary but express narrower, more similar ideas. The author calls this "paradoxical homogenization": the illusion of originality while our thoughts quietly converge.
+AI makes writing more eloquent but less original. A Georgetown study of 373,000 college admissions essays found that after ChatGPT became widely available, essays used richer vocabulary but expressed narrower, more similar ideas. The author calls this **paradoxical homogenization**: the illusion of originality while our thoughts quietly converge.
 
 ## The Georgetown Study: 373,000 Essays, Before and After ChatGPT
 
-Researchers at Georgetown University analyzed a massive corpus of college admissions essays — 373,000 in total — comparing submissions written before and after ChatGPT became widely available. The dataset was large enough to detect subtle shifts in both language and meaning, and the results were striking.
+Researchers at Georgetown University analyzed a massive corpus of college admissions essays — 373,000 in total — comparing submissions written before and after ChatGPT. The dataset was large enough to detect subtle shifts in both language and meaning, and the results were striking.
 
-Post-ChatGPT essays showed measurable gains in lexical sophistication. Words became more polished, sentences more fluid, and overall prose more confident. But underneath that surface improvement, something else was happening: the ideas themselves were becoming less diverse.
+Post-ChatGPT essays showed measurable gains in lexical sophistication. Words became more polished, sentences more fluid, and overall prose more confident. But underneath that surface improvement, the ideas themselves were becoming less diverse.
 
 ## The Paradox: Richer Vocabulary, Narrower Ideas
 
