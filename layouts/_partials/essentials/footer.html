@@ -1,0 +1,62 @@
+{{/* Hallmark · Ft5 Statement footer · design-system: design.md */}}
+<footer class="footer-ft5 bg-light dark:bg-darkmode-light">
+  <div class="container py-14">
+    <div class="row gy-8 items-end">
+      <div class="lg:col-7">
+        <a
+          class="navbar-brand inline-block mb-6"
+          href="{{ site.Home.RelPermalink }}"
+          aria-label="{{ site.Title }}">
+          {{ partial "logo" }}
+        </a>
+        <p class="footer-statement mb-0 text-text-dark dark:text-darkmode-text-dark">
+          {{ if eq site.Language.Lang "es" }}
+            Construir sistemas de IA, enseñarlos con claridad y mostrar el demo.
+          {{ else }}
+            Build AI systems, teach them simply, and show the demo.
+          {{ end }}
+        </p>
+      </div>
+      <div class="lg:col-5">
+        <ul class="mb-6 flex flex-wrap gap-x-5 gap-y-2 list-none p-0 m-0 lg:justify-end">
+          {{ range site.Menus.footer }}
+            <li>
+              <a
+                class="text-sm font-medium text-text-light hover:text-primary dark:text-darkmode-text-light dark:hover:text-darkmode-primary"
+                {{ if findRE `^http` .URL }}
+                  target="_blank" rel="noopener"
+                {{ end }}
+                href="{{ if findRE `^#` .URL }}
+                  {{ if not $.IsHome }}
+                    {{ site.Home.RelPermalink }}
+                  {{ end }}{{ .URL }}
+                {{ else }}
+                  {{ .URL | relLangURL }}
+                {{ end }}"
+                >{{ .Name }}</a
+              >
+            </li>
+          {{ end }}
+        </ul>
+        <ul class="social-icons mb-0 lg:justify-end">
+          {{ range hugo.Data.social.main }}
+            <li>
+              <a
+                target="_blank"
+                aria-label="{{ .name }}"
+                rel="nofollow noopener"
+                href="{{ .link | safeURL }}">
+                <i class="{{ .icon }}"></i>
+              </a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="border-border dark:border-darkmode-border border-t py-6">
+    <div class="text-text-light dark:text-darkmode-text-light container text-center text-sm">
+      <p class="mb-0">{{ site.Params.copyright | markdownify }}</p>
+    </div>
+  </div>
+</footer>

@@ -7,7 +7,7 @@
 {{ end }}
 <article class="publication-card group mb-8 border-border dark:border-darkmode-border border-b pb-8 last:mb-0 last:border-b-0 last:pb-0">
   <div class="row gy-4 items-start">
-    <div class="md:col-2">
+    <div class="md:col-2 min-w-0">
       <p class="publication-year mb-0 text-2xl font-semibold text-primary dark:text-darkmode-primary">{{ $year }}</p>
       {{ with $venue }}
         <p class="mt-1 text-xs font-semibold tracking-wide text-text-light uppercase dark:text-darkmode-text-light">
@@ -15,8 +15,8 @@
         </p>
       {{ end }}
     </div>
-    <div class="md:col-10">
-      <h2 class="h5 mb-3 leading-snug">
+    <div class="md:col-10 min-w-0">
+      <h2 class="h5 mb-3 leading-snug overflow-wrap-anywhere">
         <a
           class="text-text-dark transition hover:text-primary dark:text-darkmode-text-dark dark:hover:text-darkmode-primary"
           href="{{ .RelPermalink }}">
@@ -29,7 +29,7 @@
       {{ with .Params.tags }}
         <ul class="publication-tags mb-5 flex list-none flex-wrap gap-2 p-0 m-0">
           {{ range first 4 . }}
-            <li class="rounded-md bg-light px-2.5 py-1 text-xs dark:bg-darkmode-light">{{ . }}</li>
+            <li class="rounded-full bg-light px-2.5 py-1 text-xs dark:bg-darkmode-light">{{ . }}</li>
           {{ end }}
         </ul>
       {{ end }}

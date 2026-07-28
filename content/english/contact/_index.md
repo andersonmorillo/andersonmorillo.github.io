@@ -1,7 +1,7 @@
 ---
 title: "Contact"
-meta_title: "Contact Anderson Morillo — NLP & Applied AI"
-description: "Get in touch with Anderson Morillo for collaboration on NLP, applied AI, and software projects."
+meta_title: "Contact Anderson Labs — NLP & Applied AI"
+description: "Get in touch with Anderson Labs / Anderson Morillo for collaboration on NLP, applied AI, and software projects."
 layout: "contact"
 draft: false
 ---

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Anderson Labs">
+  <title>Anderson Labs</title>
+  <rect width="128" height="128" rx="24" fill="#F7F0E4"/>
+  <!-- Left bracket -->
+  <path d="M38 26 H24 V102 H38" fill="none" stroke="#C9A227" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- Right bracket -->
+  <path d="M90 26 H104 V102 H90" fill="none" stroke="#C9A227" stroke-width="9" stroke-linecap="square" stroke-linejoin="miter"/>
+  <!-- AL monogram -->
+  <text x="64" y="78" text-anchor="middle" font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="800" font-size="42" fill="#C9A227" letter-spacing="-1">AL</text>
+</svg>

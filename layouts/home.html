@@ -3,10 +3,10 @@
   {{ with .Params.banner }}
     <section class="section pt-14 home-hero">
       <div class="container">
-        <div class="row justify-center">
-          <div class="lg:col-7 md:col-9 mb-8 text-center">
+        <div class="row items-center justify-between gy-8">
+          <div class="lg:col-6 md:col-10">
             {{ with .kicker }}
-              <p class="home-hero-kicker mb-3 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
+              <p class="home-hero-kicker lab-gold-badge mb-4">
                 {{ . }}
               </p>
             {{ end }}
@@ -22,7 +22,7 @@
               </p>
             {{ end }}
             {{ with .proof }}
-              <ul class="home-proof mb-8 flex list-none flex-wrap items-center justify-center gap-2 p-0">
+              <ul class="home-proof mb-8 flex list-none flex-wrap items-center gap-2 p-0">
                 {{ range . }}
                   <li class="home-proof-chip rounded-md border border-border px-3 py-1.5 text-sm dark:border-darkmode-border">
                     {{ . }}
@@ -30,7 +30,7 @@
                 {{ end }}
               </ul>
             {{ end }}
-            <div class="home-hero-ctas flex flex-wrap items-center justify-center gap-3">
+            <div class="home-hero-ctas flex flex-wrap items-center gap-3">
               {{ with .button }}
                 {{ if .enable }}
                   <a
@@ -57,9 +57,8 @@
               {{ end }}
             </div>
           </div>
-          <div class="col-12">
+          <div class="lg:col-6 col-12">
             {{ $bannerTitle := .title }}
-            {{/* Light theme: dark ink. Dark theme: light ink. */}}
             <div class="dark:hidden">
               {{ partial "image" (dict "Src" .image "Alt" $bannerTitle "Loading" "eager" "Class" "mx-auto lg:!max-w-[800px]" "DisplayXL" "800x" ) }}
             </div>
@@ -81,7 +80,7 @@
       <section class="section-sm">
         <div class="container">
           <div class="home-featured rounded-xl border border-border p-6 dark:border-darkmode-border md:p-10">
-            <p class="mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
+            <p class="lab-gold-badge mb-3">
               {{ .label }}
             </p>
             <h2 class="h4 mb-6">{{ .title }}</h2>
