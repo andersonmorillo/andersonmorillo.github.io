@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Brand Summary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #DB2777;
+      --secondary: #7C3AED;
+      --accent: #FBBF24;
+      --dark: #1A0B16;
+      --light: #FFF7FB;
+      --soft: #FCE7F3;
+      --muted: #9a7a8c;
+      --line: rgba(255, 247, 251, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", system-ui, sans-serif;
+      color: var(--light);
+      background:
+        radial-gradient(900px 480px at 0% -10%, #5a1848 0%, transparent 50%),
+        radial-gradient(700px 400px at 100% 0%, #3b1768 0%, transparent 45%),
+        var(--dark);
+      line-height: 1.5;
+    }
+
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 36px 20px 80px;
+    }
+
+    .hero {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px 24px;
+      background:
+        linear-gradient(135deg, rgba(219, 39, 119, 0.18), rgba(124, 58, 237, 0.12)),
+        rgba(255, 247, 251, 0.03);
+      margin-bottom: 28px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--dark);
+      background: var(--accent);
+      padding: 5px 10px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: Syne, sans-serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin: 0 0 12px;
+    }
+
+    .hero-lead {
+      font-size: 1.05rem;
+      max-width: 46ch;
+      color: var(--soft);
+      margin: 0 0 18px;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .chip {
+      font-size: 0.82rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      margin-bottom: 28px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 22px;
+      background: rgba(255, 247, 251, 0.03);
+    }
+
+    h2 {
+      font-family: Syne, sans-serif;
+      font-size: 1.35rem;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-note {
+      color: var(--muted);
+      margin: 0 0 16px;
+      font-size: 0.95rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .block {
+      background: rgba(0, 0, 0, 0.22);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .block h3 {
+      margin: 0 0 8px;
+      font-family: Syne, sans-serif;
+      font-size: 1rem;
+    }
+
+    .block p, .block li {
+      margin: 0;
+      color: var(--soft);
+      font-size: 0.92rem;
+    }
+
+    .block ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--soft);
+    }
+
+    .block li + li { margin-top: 4px; }
+
+    .tone-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tone {
+      background: rgba(124, 58, 237, 0.25);
+      border: 1px solid rgba(124, 58, 237, 0.45);
+      color: var(--light);
+      padding: 6px 10px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+    }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .swatch {
+      border-radius: 12px;
+      min-height: 88px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .type-sample {
+      background: var(--light);
+      color: var(--dark);
+      border-radius: 14px;
+      padding: 18px;
+    }
+
+    .type-sample .h {
+      font-family: Syne, sans-serif;
+      font-size: 1.7rem;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin: 0 0 8px;
+    }
+
+    .type-sample .b {
+      margin: 0;
+      font-size: 1rem;
+      color: #3b2030;
+    }
+
+    .type-meta {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .formula {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+    }
+
+    .step {
+      background: rgba(0, 0, 0, 0.22);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .step .n {
+      display: inline-grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--dark);
+      font-weight: 800;
+      font-size: 0.8rem;
+      margin-bottom: 8px;
+    }
+
+    .step strong {
+      display: block;
+      font-family: Syne, sans-serif;
+      margin-bottom: 4px;
+    }
+
+    .step span {
+      color: var(--soft);
+      font-size: 0.88rem;
+    }
+
+    .previews {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .mini {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      min-height: 150px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    .mini .label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+
+    .mini h4 {
+      font-family: Syne, sans-serif;
+      margin: 8px 0 0;
+      font-size: 1.05rem;
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .mini .bar {
+      height: 6px;
+      width: 48%;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .links a {
+      color: var(--dark);
+      background: var(--accent);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 14px;
+      border-radius: 12px;
+    }
+
+    .links a.secondary {
+      background: transparent;
+      color: var(--light);
+      border: 1px solid var(--line);
+    }
+
+    .do-dont {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px;
+    }
+
+    .do { border-left: 3px solid #10B981; }
+    .dont { border-left: 3px solid #F43F5E; }
+
+    footer {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <span class="eyebrow">Anderson Labs · Purpose locked</span>
+      <h1>Make AI feel sharp, fun, and usable</h1>
+      <p class="hero-lead">
+        I’m a systems &amp; computer engineer who builds AI systems, teaches them simply,
+        and backs that with research — demos and repos people can actually use.
+      </p>
+      <div class="chips">
+        <span class="chip">Curious · Trustworthy · Bold</span>
+        <span class="chip">Magician + Creator</span>
+        <span class="chip">Face as primary avatar</span>
+        <span class="chip">Instagram → LinkedIn → YouTube</span>
+        <span class="chip">Palette C · Syne + DM Sans</span>
+        <span class="chip">Bracket Lab · Cream + Gold</span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Purpose &amp; brand audit</h2>
+      <p class="section-note">
+        Based on HBS Online personal branding and personal brand audit frameworks
+        (<a href="https://online.hbs.edu/blog/post/personal-branding-at-work" style="color:var(--accent);">branding at work</a>
+        ·
+        <a href="https://online.hbs.edu/blog/post/brand-audit" style="color:var(--accent);">brand audit</a>).
+        Also in LaTeX: <code style="color:var(--soft);">anderson-labs-purpose-audit.tex</code>
+      </p>
+      <div class="grid-2">
+        <div class="block">
+          <h3>Value proposition</h3>
+          <p>Engineer who builds AI systems, teaches them simply, and publishes research — with demos and repos people can use.</p>
+        </div>
+        <div class="block">
+          <h3>One-line bio</h3>
+          <p>Engineer · AI systems · research · I explain it simply and show the build.</p>
+        </div>
+        <div class="block">
+          <h3>Descriptors (3)</h3>
+          <p>Curious · Trustworthy · Bold</p>
+        </div>
+        <div class="block">
+          <h3>Brand word</h3>
+          <p>Clear builder</p>
+        </div>
+        <div class="block">
+          <h3>Credentials</h3>
+          <p>Systems &amp; Computer Engineer; Master’s in Engineering; 4 papers published; 3 AI papers forthcoming.</p>
+        </div>
+        <div class="block">
+          <h3>Social capital</h3>
+          <p>Friends and colleagues — systems engineers and the general public (two audience layers).</p>
+        </div>
+        <div class="block">
+          <h3>Cultural capital</h3>
+          <p>1+ year teaching young people and children — the muscle behind “simple without dumbing down.”</p>
+        </div>
+        <div class="block">
+          <h3>Physical capital</h3>
+          <p>Face as primary avatar; Bracket Lab Cream + Gold mark for covers and watermarks.</p>
+        </div>
+      </div>
+      <div style="margin-top:14px;" class="grid-2">
+        <div class="block">
+          <h3>HBS 4-test</h3>
+          <ul>
+            <li><strong>Accurate</strong> — engineer + research + teaching + builds</li>
+            <li><strong>Coherent</strong> — Labs name, visuals, and pillars align</li>
+            <li><strong>Compelling</strong> — research + teaches youth + ships demos</li>
+            <li><strong>Differentiated</strong> — not generic AI tips; engineer-researcher who teaches simply</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Content pillars</h3>
+          <ul>
+            <li><strong>Build</strong> — AI systems / demos / repos</li>
+            <li><strong>Teach</strong> — simple explainers</li>
+            <li><strong>Research</strong> — papers → plain-language takeaways</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Still open</h3>
+          <ul>
+            <li>Google name check (conflicts / positives)</li>
+            <li>Truthteller ratings (1–10)</li>
+            <li>Three proof stories</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Avoid</h3>
+          <p>Tip-spam with no demo; hype without a paper or build behind it; looking ridiculous or unserious.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What this brand represents</h2>
+      <p class="section-note">The meaning behind the look — values, tone, and promise.</p>
+      <div class="grid-2">
+        <div class="block">
+          <h3>Purpose</h3>
+          <p>Build AI systems, teach them simply, and share research — then show the demo or repo that proves it.</p>
+        </div>
+        <div class="block">
+          <h3>Archetype</h3>
+          <p><strong>Magician</strong> (primary): transform complexity into simple demos.<br />
+          <strong>Creator</strong> (secondary): ship projects, experiments, and original ideas.</p>
+        </div>
+        <div class="block">
+          <h3>People should feel</h3>
+          <ul>
+            <li>Energy</li>
+            <li>Authority</li>
+            <li>Creativity</li>
+            <li>Boldness</li>
+            <li>Playfulness</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Words to own / avoid</h3>
+          <p><strong>Own:</strong> AI, Research, creative<br />
+          <strong>Avoid:</strong> boring, ridiculous, unable to be serious</p>
+        </div>
+      </div>
+      <div style="margin-top:14px;">
+        <h3 style="font-family:Syne,sans-serif;font-size:1rem;margin:0 0 8px;">Tone</h3>
+        <div class="tone-row">
+          <span class="tone">Progressive</span>
+          <span class="tone">Bold</span>
+          <span class="tone">Precise</span>
+          <span class="tone">Accessible</span>
+          <span class="tone">Playful · serious when needed</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Design results — colors</h2>
+      <p class="section-note">Magenta Mind (Palette C). Bold on Instagram; calmer on LinkedIn with more dark + gold.</p>
+      <div class="swatches">
+        <div class="swatch" style="background:#DB2777;color:#fff;"><span>Primary</span><span>#DB2777</span></div>
+        <div class="swatch" style="background:#7C3AED;color:#fff;"><span>Secondary</span><span>#7C3AED</span></div>
+        <div class="swatch" style="background:#FBBF24;color:#1A0B16;"><span>Accent</span><span>#FBBF24</span></div>
+        <div class="swatch" style="background:#1A0B16;color:#FFF7FB;"><span>Dark</span><span>#1A0B16</span></div>
+        <div class="swatch" style="background:#FFF7FB;color:#1A0B16;"><span>Light</span><span>#FFF7FB</span></div>
+        <div class="swatch" style="background:#FCE7F3;color:#1A0B16;"><span>Soft text</span><span>#FCE7F3</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Design results — typography</h2>
+      <p class="section-note">Bold Broadcast (Fonts 2): loud hooks, readable explanations.</p>
+      <div class="type-sample">
+        <p class="h">COOL AI PROJECT</p>
+        <p class="b">Serious idea. Simple words. Unexpected demo.</p>
+      </div>
+      <p class="type-meta">
+        Heading: <strong>Syne</strong> (Bold / ExtraBold) ·
+        Body: <strong>DM Sans</strong> ·
+        <a href="https://fonts.google.com/specimen/Syne" style="color:var(--accent);">Syne</a> ·
+        <a href="https://fonts.google.com/specimen/DM+Sans" style="color:var(--accent);">DM Sans</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Design results — imagery</h2>
+      <p class="section-note">Maker Desk (Imagery 2): real process, not stock robots.</p>
+      <div class="do-dont">
+        <div class="block do">
+          <h3>Do</h3>
+          <ul>
+            <li>Hands-on builds</li>
+            <li>Notebook + laptop</li>
+            <li>Sticky notes → shipped UI</li>
+            <li>Show the working thing</li>
+          </ul>
+        </div>
+        <div class="block dont">
+          <h3>Don’t</h3>
+          <ul>
+            <li>Empty luxury desk staging</li>
+            <li>Generic AI brain / robot stock</li>
+            <li>Clutter that looks ridiculous</li>
+            <li>Playfulness without a clear point</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Content formula</h2>
+      <p class="section-note">Same structure across Instagram, LinkedIn, and YouTube.</p>
+      <div class="formula">
+        <div class="step"><div class="n">1</div><strong>Hook</strong><span>Playful + bold</span></div>
+        <div class="step"><div class="n">2</div><strong>Explain</strong><span>Precise + simple</span></div>
+        <div class="step"><div class="n">3</div><strong>Proof</strong><span>Repo or demo</span></div>
+        <div class="step"><div class="n">4</div><strong>Takeaway</strong><span>Authority line</span></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Locked A templates — snapshot</h2>
+      <p class="section-note">Your chosen template system. Open the full mockups for layout detail.</p>
+      <div class="previews">
+        <div class="mini" style="background:#1A0B16;">
+          <div>
+            <div class="label">Reel · 9:16</div>
+            <h4>AI that explains itself</h4>
+          </div>
+          <div class="bar"></div>
+        </div>
+        <div class="mini" style="background:#FFF7FB;color:#1A0B16;">
+          <div>
+            <div class="label" style="color:#DB2777;">Carousel · 1:1</div>
+            <h4>3 repos worth your weekend</h4>
+          </div>
+          <div class="bar"></div>
+        </div>
+        <div class="mini" style="background:#FFF7FB;color:#1A0B16;">
+          <div>
+            <div class="label" style="color:#7C3AED;">LinkedIn</div>
+            <h4>Paper → 12-min demo</h4>
+          </div>
+          <div class="bar"></div>
+        </div>
+        <div class="mini" style="background:#1A0B16;">
+          <div>
+            <div class="label" style="color:#FBBF24;">YouTube · 16:9</div>
+            <h4>AI that writes my README</h4>
+          </div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="brand-templates.html">Open full A templates</a>
+        <a class="secondary" href="brand-options.html">Revisit option picker</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Channel cheat sheet</h2>
+      <div class="grid-2">
+        <div class="block">
+          <h3>Instagram (primary)</h3>
+          <p>Bold magenta/purple, Syne hooks, Maker Desk process stills and short demos. Gold for series badges only.</p>
+        </div>
+        <div class="block">
+          <h3>LinkedIn</h3>
+          <p>Same projects, cleaner crop, more dark + gold, less neon wash. Short “what I built / why it matters.”</p>
+        </div>
+        <div class="block">
+          <h3>YouTube</h3>
+          <p>Desk → screen → result. Big Syne title, one gold badge, dark frames with purple glow.</p>
+        </div>
+        <div class="block">
+          <h3>One-line bio</h3>
+          <p>Engineer · AI systems · research · I explain it simply and show the build.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      Locked kit: Anderson Labs · Curious · Trustworthy · Bold · Face avatar · Magician + Creator · Palette C · Fonts 2 · Imagery 2 · Bracket Lab Cream + Gold
+    </footer>
+  </div>
+</body>
+</html>
