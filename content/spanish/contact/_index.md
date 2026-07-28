@@ -1,7 +1,7 @@
 ---
 title: "Contacto"
-meta_title: "Contactar a Anderson Morillo — NLP e IA aplicada"
-description: "Contacta a Anderson Morillo para colaborar en NLP, IA aplicada y proyectos de software."
+meta_title: "Contactar Anderson Labs — NLP e IA aplicada"
+description: "Contacta a Anderson Labs / Anderson Morillo para colaborar en NLP, IA aplicada y proyectos de software."
 layout: "contact"
 draft: false
 ---

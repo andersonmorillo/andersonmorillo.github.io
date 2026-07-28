@@ -1,14 +1,14 @@
 ---
-title: "Anderson Morillo"
-meta_title: "Anderson Morillo — AI Engineer & NLP Researcher"
-description: "AI Engineer and NLP Researcher at VerbaNexAI Lab (UTB). RAG systems, SemEval research, transformers, and production AI platforms."
+title: "Anderson Labs"
+meta_title: "Anderson Labs — AI systems, research, demos"
+description: "Anderson Labs: build AI systems, teach them simply, and share research — with demos and repos people can use. Led by Anderson Morillo."
 
 # Banner
 banner:
-  title: "Anderson Morillo"
-  kicker: "AI Engineer · NLP Researcher"
+  title: "Anderson Labs"
+  kicker: "Build · Teach · Research"
   content: "I build production RAG systems and publish NLP research on retrieval, persuasion, and hallucination filtering."
-  support: "VerbaNexAI Lab (UTB) · applied AI for industry and research."
+  support: "Engineer · AI systems · research · I explain it simply and show the build."
   image: "/images/home-banner.png"
   image_dark: "/images/home-banner-dark.png"
   proof:

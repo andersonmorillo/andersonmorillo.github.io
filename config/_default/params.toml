@@ -6,12 +6,12 @@ logo = "images/logo.png"
 logo_darkmode = "images/logo-darkmode.png"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "200px"
+logo_width = "180px"
 logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "Anderson's code"
+logo_text = "Anderson Labs"
 # navbar fixed to top
 navbar_fixed = true
 # theme-mode
@@ -27,7 +27,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "© Anderson Morillo"
+copyright = "© Anderson Labs"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader
@@ -57,7 +57,7 @@ exclude = []
 # search module: https://github.com/gethugothemes/hugo-modules/tree/master/search
 [search]
 enable = true
-primary_color = "#121212"
+primary_color = "#DB2777"
 include_sections = ["blog", "publications"]
 show_image = true
 show_description = true
@@ -75,7 +75,7 @@ content = ""
 # seo module: https://github.com/gethugothemes/hugo-modules/tree/master/seo-tools/basic-seo
 [metadata]
 keywords = ["NLP", "Artificial Intelligence", "Software Engineering", "Research"]
-description = "Software Engineer and Research Assistant focused on Natural Language Processing, software architecture, and applied AI."
+description = "Anderson Labs — AI systems, research, and demos. Led by Anderson Morillo."
 author = "Anderson Morillo"
 twitter = ""
 image = "images/og-image.png"

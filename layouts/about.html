@@ -16,9 +16,14 @@
           {{ end }}
         </div>
         <div class="md:col-8 lg:col-9">
-          <p class="about-kicker mb-2 text-sm font-semibold tracking-wide text-primary uppercase dark:text-darkmode-primary">
+          <p class="about-kicker lab-gold-badge mb-4">
             {{ .Params.role | default "" }}
           </p>
+          {{ if eq site.Language.Lang "es" }}
+            <p class="about-letter-open mb-2 text-text-light dark:text-darkmode-text-light">Hola —</p>
+          {{ else }}
+            <p class="about-letter-open mb-2 text-text-light dark:text-darkmode-text-light">Hello —</p>
+          {{ end }}
           <h1 class="h2 mb-3">{{ .Title }}</h1>
           {{ with .Params.location }}
             <p class="mb-4 text-text-light dark:text-darkmode-text-light">{{ . }}</p>

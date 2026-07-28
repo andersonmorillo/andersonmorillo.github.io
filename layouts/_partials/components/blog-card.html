@@ -1,7 +1,7 @@
-<div class="bg-body dark:bg-darkmode-body">
+<div class="blog-card bg-body dark:bg-darkmode-body">
   {{ $image:= .Params.image | default "/images/genvid-daily-cover.png" }}
-  {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
-  <h4 class="mb-3">
+  {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded-xl") }}
+  <h4 class="mb-3 min-w-0">
     <a href="{{ .RelPermalink }}">
       {{ .Title }}
     </a>

@@ -1,14 +1,14 @@
 ---
-title: "Anderson Morillo"
-meta_title: "Anderson Morillo — Ingeniero de IA e investigador en NLP"
-description: "Ingeniero de IA e investigador en NLP en el VerbaNexAI Lab (UTB): sistemas RAG, investigación SemEval, transformers e IA en producción."
+title: "Anderson Labs"
+meta_title: "Anderson Labs — sistemas de IA, investigación y demos"
+description: "Anderson Labs: construyo sistemas de IA, los enseño con claridad y comparto investigación — con demos y repos que se pueden usar. Dirigido por Anderson Morillo."
 
 # Banner
 banner:
-  title: "Anderson Morillo"
-  kicker: "Ingeniero de IA · Investigador en NLP"
+  title: "Anderson Labs"
+  kicker: "Construir · Enseñar · Investigar"
   content: "Construyo sistemas RAG en producción y publico investigación en NLP sobre recuperación, persuasión y filtrado de alucinaciones."
-  support: "VerbaNexAI Lab (UTB) · IA aplicada para industria e investigación."
+  support: "Ingeniero · sistemas de IA · investigación · lo explico simple y muestro el build."
   image: "/images/home-banner.png"
   image_dark: "/images/home-banner-dark.png"
   proof:

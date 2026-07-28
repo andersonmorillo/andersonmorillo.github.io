@@ -1,6 +1,6 @@
 ---
 title: "Anderson Morillo"
-meta_title: "About Anderson Morillo — AI Engineer & NLP Researcher"
+meta_title: "About · Anderson Labs — Anderson Morillo"
 description: "AI Engineer and NLP Researcher in Cartagena, Colombia — RAG systems, transformers, and production AI at COTECMAR and Universidad Tecnológica de Bolívar."
 image: "/images/avatar1.jpeg"
 layout: "about"

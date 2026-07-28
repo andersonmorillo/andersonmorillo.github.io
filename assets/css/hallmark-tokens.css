@@ -1,0 +1,63 @@
+/* Hallmark · genre: atmospheric · macrostructure: Feature Stack
+ * theme: custom Magenta Mind (Palette C) · design-system: design.md · designed-as-app
+ * pre-emit critique: P5 H4 E4 S4 R4 V4
+ * Mirror of /tokens.css for Hugo asset pipeline.
+ */
+
+:root {
+  --color-paper: oklch(98.5% 0.012 350);
+  --color-paper-2: oklch(95% 0.03 350);
+  --color-ink: oklch(18% 0.04 350);
+  --color-ink-2: oklch(55% 0.04 350);
+  --color-rule: oklch(90% 0.02 350);
+  --color-accent: oklch(58% 0.22 350);
+  --color-accent-2: oklch(52% 0.22 295);
+  --color-gold: oklch(84% 0.15 85);
+  --color-focus: oklch(84% 0.15 85);
+  --color-soft: oklch(95% 0.03 350);
+
+  --color-magenta: #db2777;
+  --color-purple: #7c3aed;
+  --color-gold-hex: #fbbf24;
+  --color-dark-hex: #1a0b16;
+  --color-light-hex: #fff7fb;
+  --color-soft-hex: #fce7f3;
+
+  --color-mark-cream: #f7f0e4;
+  --color-mark-gold: #c9a227;
+
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+
+  --text-display: clamp(2rem, 5vw, 3.25rem);
+  --text-display-s: clamp(1.5rem, 3vw, 2.25rem);
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+  --dur-fast: 120ms;
+  --dur-mid: 280ms;
+  --dur-slow: 450ms;
+
+  --radius-btn: 0.75rem;
+  --radius-panel: 1.25rem;
+}
+
+html.dark {
+  --color-paper: oklch(18% 0.04 350);
+  --color-paper-2: oklch(22% 0.05 350);
+  --color-ink: oklch(98.5% 0.012 350);
+  --color-ink-2: oklch(78% 0.03 350);
+  --color-rule: oklch(32% 0.04 350);
+  --color-soft: oklch(28% 0.05 350);
+}
