@@ -56,10 +56,15 @@ h3,
   border-color: color-mix(in srgb, var(--color-magenta) 88%, #000);
   color: #fff;
 }
-html.dark .btn-primary {
+html.dark .btn-primary,
+html.dark .btn-primary:hover {
   background: var(--color-magenta);
   border-color: var(--color-magenta);
-  color: #fff;
+  color: #1c1615;
+}
+html.dark .btn-primary:hover {
+  background: color-mix(in srgb, var(--color-magenta) 86%, #000);
+  border-color: color-mix(in srgb, var(--color-magenta) 86%, #000);
 }
 .btn-outline-primary {
   border-color: color-mix(in srgb, var(--color-magenta) 55%, transparent);
@@ -158,7 +163,7 @@ html.dark .img-light {
   }
 }
 
-/* Homepage hero — Magenta Mind atmosphere */
+/* Homepage hero — Ash atmosphere */
 .home-hero {
   position: relative;
   isolation: isolate;
@@ -170,15 +175,15 @@ html.dark .img-light {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(900px 480px at 0% -10%, rgba(219, 39, 119, 0.16) 0%, transparent 50%),
-    radial-gradient(700px 400px at 100% 0%, rgba(124, 58, 237, 0.12) 0%, transparent 45%),
-    linear-gradient(180deg, rgba(252, 231, 243, 0.9) 0%, rgba(255, 247, 251, 0) 70%);
+    radial-gradient(900px 480px at 0% -10%, rgba(138, 90, 86, 0.16) 0%, transparent 50%),
+    radial-gradient(700px 400px at 100% 0%, rgba(92, 64, 60, 0.1) 0%, transparent 45%),
+    linear-gradient(180deg, rgba(239, 230, 227, 0.9) 0%, rgba(247, 244, 242, 0) 70%);
 }
 html.dark .home-hero::before {
   background:
-    radial-gradient(900px 480px at 0% -10%, rgba(90, 24, 72, 0.85) 0%, transparent 50%),
-    radial-gradient(700px 400px at 100% 0%, rgba(59, 23, 104, 0.7) 0%, transparent 45%),
-    linear-gradient(180deg, rgba(42, 20, 36, 0.9) 0%, rgba(26, 11, 22, 0) 70%);
+    radial-gradient(900px 480px at 0% -10%, rgba(92, 64, 60, 0.55) 0%, transparent 50%),
+    radial-gradient(700px 400px at 100% 0%, rgba(42, 34, 32, 0.7) 0%, transparent 45%),
+    linear-gradient(180deg, rgba(42, 34, 32, 0.9) 0%, rgba(28, 22, 21, 0) 70%);
 }
 .home-hero h1 {
   font-size: var(--text-display);
@@ -197,13 +202,13 @@ html.dark .home-proof-chip {
 .home-featured {
   border-radius: var(--radius-panel) !important;
   background:
-    linear-gradient(135deg, rgba(219, 39, 119, 0.08), rgba(124, 58, 237, 0.06)),
+    linear-gradient(135deg, rgba(138, 90, 86, 0.08), rgba(92, 64, 60, 0.05)),
     color-mix(in srgb, var(--color-light-hex) 60%, transparent);
 }
 html.dark .home-featured {
   background:
-    linear-gradient(135deg, rgba(219, 39, 119, 0.14), rgba(124, 58, 237, 0.1)),
-    rgba(255, 247, 251, 0.03);
+    linear-gradient(135deg, rgba(201, 163, 158, 0.14), rgba(92, 64, 60, 0.1)),
+    rgba(247, 244, 242, 0.03);
 }
 .lab-gold-badge {
   display: inline-block;
@@ -228,13 +233,13 @@ html.dark .services-proof-chip {
 .services-featured {
   border-radius: var(--radius-panel) !important;
   background:
-    linear-gradient(135deg, rgba(219, 39, 119, 0.08), rgba(124, 58, 237, 0.06)),
+    linear-gradient(135deg, rgba(138, 90, 86, 0.08), rgba(92, 64, 60, 0.05)),
     color-mix(in srgb, var(--color-light-hex) 60%, transparent);
 }
 html.dark .services-featured {
   background:
-    linear-gradient(135deg, rgba(219, 39, 119, 0.14), rgba(124, 58, 237, 0.1)),
-    rgba(255, 247, 251, 0.03);
+    linear-gradient(135deg, rgba(201, 163, 158, 0.14), rgba(92, 64, 60, 0.1)),
+    rgba(247, 244, 242, 0.03);
 }
 
 .about-letter-open {

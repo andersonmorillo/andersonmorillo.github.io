@@ -1,28 +1,28 @@
 /* Hallmark · genre: atmospheric · macrostructure: Feature Stack
- * theme: custom Magenta Mind (Palette C) · design-system: design.md · designed-as-app
+ * theme: Ash · design-system: design.md · designed-as-app
  * pre-emit critique: P5 H4 E4 S4 R4 V4
  */
 
 :root {
-  /* Paper / ink — Magenta Mind */
-  --color-paper: oklch(98.5% 0.012 350);
-  --color-paper-2: oklch(95% 0.03 350);
-  --color-ink: oklch(18% 0.04 350);
-  --color-ink-2: oklch(55% 0.04 350);
-  --color-rule: oklch(90% 0.02 350);
-  --color-accent: oklch(58% 0.22 350);
-  --color-accent-2: oklch(52% 0.22 295);
-  --color-gold: oklch(84% 0.15 85);
-  --color-focus: oklch(84% 0.15 85);
-  --color-soft: oklch(95% 0.03 350);
+  /* Paper / ink — Ash */
+  --color-paper: oklch(96.9% 0.004 56); /* #F7F4F2 */
+  --color-paper-2: oklch(93.1% 0.011 39); /* #EFE6E3 */
+  --color-ink: oklch(20.7% 0.01 29); /* #1C1615 */
+  --color-ink-2: oklch(49.6% 0.022 34); /* #6E5E5A */
+  --color-rule: oklch(89.5% 0.012 43); /* #E4DAD6 */
+  --color-accent: oklch(51.9% 0.064 25); /* #8A5A56 */
+  --color-accent-2: oklch(40.2% 0.04 28); /* #5C403C */
+  --color-gold: oklch(74.8% 0.046 27); /* #C9A39E */
+  --color-focus: oklch(51.9% 0.064 25);
+  --color-soft: oklch(93.1% 0.011 39);
 
   /* Hex mirrors for Hugoplate theme.json alignment */
-  --color-magenta: #db2777;
-  --color-purple: #7c3aed;
-  --color-gold-hex: #fbbf24;
-  --color-dark-hex: #1a0b16;
-  --color-light-hex: #fff7fb;
-  --color-soft-hex: #fce7f3;
+  --color-magenta: #8a5a56;
+  --color-purple: #5c403c;
+  --color-gold-hex: #c9a39e;
+  --color-dark-hex: #1c1615;
+  --color-light-hex: #f7f4f2;
+  --color-soft-hex: #efe6e3;
 
   /* Mark — Bracket Lab Cream + Gold */
   --color-mark-cream: #f7f0e4;
@@ -65,10 +65,14 @@
 }
 
 html.dark {
-  --color-paper: oklch(18% 0.04 350);
-  --color-paper-2: oklch(22% 0.05 350);
-  --color-ink: oklch(98.5% 0.012 350);
-  --color-ink-2: oklch(78% 0.03 350);
-  --color-rule: oklch(32% 0.04 350);
-  --color-soft: oklch(28% 0.05 350);
+  --color-paper: oklch(20.7% 0.01 29);
+  --color-paper-2: oklch(26% 0.013 34);
+  --color-ink: oklch(96.1% 0.006 43);
+  --color-ink-2: oklch(78.2% 0.019 34);
+  --color-rule: oklch(31.9% 0.015 31);
+  --color-soft: oklch(26% 0.013 34);
+  --color-accent: oklch(74.8% 0.046 27);
+  --color-focus: oklch(74.8% 0.046 27);
+  --color-magenta: #c9a39e;
+  --color-gold-hex: #c9a39e;
 }

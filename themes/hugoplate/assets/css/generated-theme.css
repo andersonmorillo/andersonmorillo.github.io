@@ -6,24 +6,24 @@
 
 @theme {
   /* === Colors === */
-  --color-primary: #DB2777;
-  --color-body: #FFF7FB;
-  --color-border: #F0D4E4;
-  --color-light: #FCE7F3;
-  --color-dark: #1A0B16;
-  --color-text: #3B2030;
-  --color-text-dark: #1A0B16;
-  --color-text-light: #9A7A8C;
+  --color-primary: #8A5A56;
+  --color-body: #F7F4F2;
+  --color-border: #E4DAD6;
+  --color-light: #EFE6E3;
+  --color-dark: #1C1615;
+  --color-text: #3A302E;
+  --color-text-dark: #1C1615;
+  --color-text-light: #6E5E5A;
 
   /* === Darkmode Colors === */
-  --color-darkmode-primary: #FBBF24;
-  --color-darkmode-body: #1A0B16;
-  --color-darkmode-border: #3D1F32;
-  --color-darkmode-light: #2A1424;
-  --color-darkmode-dark: #FFF7FB;
-  --color-darkmode-text: #FCE7F3;
-  --color-darkmode-text-dark: #FFF7FB;
-  --color-darkmode-text-light: #C9A8B8;
+  --color-darkmode-primary: #C9A39E;
+  --color-darkmode-body: #1C1615;
+  --color-darkmode-border: #3A302E;
+  --color-darkmode-light: #2A2220;
+  --color-darkmode-dark: #F6F1EF;
+  --color-darkmode-text: #F6F1EF;
+  --color-darkmode-text-dark: #F7F4F2;
+  --color-darkmode-text-light: #C4B4B0;
 
   /* === Font Families === */
   --font-primary: DM Sans, sans-serif;
