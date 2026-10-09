@@ -18,17 +18,17 @@ atmospheric (dark AI energy) with playful CTA voice
 
 ## Theme
 
-Magenta Mind (Palette C). Gold accent ≤ 5% on site surfaces; gold dominates the header mark only.
+Ash. One muted red, warm neutrals. Light accent `#8A5A56`; dark accent `#C9A39E` with ink labels on filled buttons.
 
-- `--color-paper`   oklch(98.5% 0.012 350)   /* #FFF7FB */
-- `--color-paper-2` oklch(95% 0.03 350)      /* #FCE7F3 */
-- `--color-ink`     oklch(18% 0.04 350)      /* #1A0B16 */
-- `--color-ink-2`   oklch(55% 0.04 350)      /* muted plum */
-- `--color-rule`    oklch(90% 0.02 350)
-- `--color-accent`  oklch(58% 0.22 350)      /* #DB2777 magenta */
-- `--color-accent-2` oklch(52% 0.22 295)     /* #7C3AED purple */
-- `--color-gold`    oklch(84% 0.15 85)       /* #FBBF24 */
-- `--color-focus`   oklch(84% 0.15 85)       /* gold focus ring */
+- `--color-paper`   oklch(96.9% 0.004 56)   /* #F7F4F2 */
+- `--color-paper-2` oklch(93.1% 0.011 39)    /* #EFE6E3 */
+- `--color-ink`     oklch(20.7% 0.01 29)     /* #1C1615 */
+- `--color-ink-2`   oklch(49.6% 0.022 34)    /* #6E5E5A */
+- `--color-rule`    oklch(89.5% 0.012 43)    /* #E4DAD6 */
+- `--color-accent`  oklch(51.9% 0.064 25)    /* #8A5A56 */
+- `--color-accent-2` oklch(40.2% 0.04 28)    /* #5C403C */
+- `--color-gold`    oklch(74.8% 0.046 27)    /* #C9A39E dark accent */
+- `--color-focus`   oklch(51.9% 0.064 25)    /* same as accent; pale ash in dark */
 
 Dark paper band uses `--color-ink` as body; light ink uses `--color-paper`.
 
@@ -59,8 +59,8 @@ Dark paper band uses `--color-ink` as body; light ink uses `--color-paper`.
 
 ## CTA voice
 
-- Primary CTA: filled magenta (`--color-accent`), soft radius (~12px), Syne/DM Sans bold label
-- Secondary CTA: outline on rule / ink, same radius; gold used sparingly for badges only
+- Primary CTA: filled ash (`--color-accent`), soft radius (~12px), Outfit/DM Sans bold label. Dark fill is `#C9A39E` with ink text.
+- Secondary CTA: outline on rule / ink, same radius
 
 ## Per-page allowances
 
@@ -71,7 +71,7 @@ Dark paper band uses `--color-ink` as body; light ink uses `--color-paper`.
 ## What pages MUST share
 
 - Wordmark / Bracket Lab Cream+Gold mark
-- Accent placement (magenta primary; purple secondary; gold ≤ 5% site / full on mark)
+- Accent placement (ash primary in light, pale ash in dark)
 - Syne + DM Sans
 - CTA voice
 - Brand chrome name: **Anderson Labs**
